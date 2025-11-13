@@ -1,17 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="../../style/khalid/page.css">
 
 </head>
-<body>
-   
+
+<body >
+
+    <header class="flex  justify-between sticky w-full top-0 bottom-0 bg-white z-40">
+        <div class="  h-20 flex md:w-[20%] ml-5  justify-center items-center  ">
+            <div class="bg-[#0A2A66] rounded-full w-fit h-fit p-1 rotate-180 flex justify-center items-center ml-2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24" fill="#D4AF37"
+                    stroke="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-moon-icon lucide-moon">
+                    <path
+                        d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401" />
+                </svg>
+            </div>
+            <div>
+                <h3 class="text-[#0A2A66] font-bold font-sans ">Hilal Hotels</h3>
+                <h3 class="text-[#D4AF37] font-bold">فنادق الهلال</h3>
+
+            </div>
+        </div>
+
+        <nav class="ml-10 justify-center items-center hidden md:flex  w-[60%] ">
+            <div class="flex justify-around w-full">
+                <h2 class="text-[#D4AF37] hover:cursor-pointer text-2xl font-sans font-bold"><a>Home</a></h2>
+                <h2 class="hover:text-[#D4AF37] hover:cursor-pointer text-2xl font-sans font-bold"><a>Branch</a></h2>
+                <h2 class="hover:text-[#D4AF37] hover:cursor-pointer text-2xl font-sans font-bold"><a>Rooms</a></h2>
+                <h2 class="hover:text-[#D4AF37] hover:cursor-pointer text-2xl font-sans font-bold"><a>service</a></h2>
+                <h2 class="hover:text-[#D4AF37] hover:cursor-pointer text-2xl font-sans font-bold"><a>Offers</a></h2>
+                <h2 class="hover:text-[#D4AF37] hover:cursor-pointer text-2xl font-sans font-bold"><a>About us</a></h2>
+                <h2 class="hover:text-[#D4AF37] hover:cursor-pointer text-2xl font-sans font-bold"><a>Content</a></h2>
+
+
+
+            </div>
 
 
 
 
+        </nav>
+        <div class="w-[10%] flex justify-center items-center hidden md:flex ">
+            <button class="bg-[#0A2A66] text-white p-4 rounded-xl hover:cursor-pointer">Book Now</button>
+
+        </div>
+        
+        <!-- responsive-->
+         <div class="md:hidden w-[10%] flex justify-center items-center" id="hum-icon">
+            <svg class="remove-one" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu-icon lucide-menu"><path d="M4 5h16"/><path d="M4 12h16"/><path d="M4 19h16"/></svg>
+            <svg class="remove-two hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x-icon lucide-x"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+         </div>
+
+         
+        <!-- responsive-->
+
+    </header>
+
+      <!-- responsive-->
+       <div class="z-40 md:hidden hidden" id="dilog">
+        <div class="flex justify-center items-center">
+       <hr class="border-[#D4AF37] w-[80%]">
+
+        </div>
+        <h2 class="text-[#D4AF37] hover:cursor-pointer text-2xl font-sans font-bold"><a>Home</a></h2>
+                <h2 class="hover:text-[#D4AF37] hover:cursor-pointer text-2xl font-sans font-bold"><a>Branch</a></h2>
+                <h2 class="hover:text-[#D4AF37] hover:cursor-pointer text-2xl font-sans font-bold"><a>Rooms</a></h2>
+                <h2 class="hover:text-[#D4AF37] hover:cursor-pointer text-2xl font-sans font-bold"><a>service</a></h2>
+                <h2 class="hover:text-[#D4AF37] hover:cursor-pointer text-2xl font-sans font-bold"><a>Offers</a></h2>
+                <h2 class="hover:text-[#D4AF37] hover:cursor-pointer text-2xl font-sans font-bold"><a>About us</a></h2>
+                <h2 class="hover:text-[#D4AF37] hover:cursor-pointer text-2xl font-sans font-bold"><a>Content</a></h2>
+
+                <div class="flex justify-center items-center">
+                <button class="bg-[#0A2A66] text-white p-4 mt-4 mb-4 w-[90%] rounded  hover:cursor-pointer">Book Now</button>
+
+                </div>
+
+       </div>
+
+
+      <!-- responsive-->
+
+
+
+    <!-- <section class="bg-[#0A2A66] h-50 flex flex-col justify-center items-center">
+        <h1 class="text-white text-5xl font-sans font-bold text-center mt-2 mb-2">Our Branches </h1>
+        <h3 class="text-white text-2xl text-center">Four premium locations in the Kingdom's most important cities</h3>
+    </section> -->
+
+    <section>
+      <div class="bg-no-repeat absolute inset-0 w-full h-full object-cover" style="background-image: url(https://images.unsplash.com/photo-1702814160779-4a88cfb330c7?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxob3RlbCUyMGxvYmJ5JTIwZWxlZ2FudHxlbnwxfHx8fDE3NjMwMDM5ODd8MA&amp;ixlib=rb-4.1.0&amp;q=80&amp;w=1080 );">
+
+        </div>
+    </section>
+
+
+
+
+    <script>
+        let dilog=document.querySelector("#dilog")
+        let state="x"
+        let icon=document.querySelector("#hum-icon");
+        let x_element=document.querySelector(".remove-one")
+        let space_elemnt=document.querySelector(".remove-two")
+        
+       
+        icon.addEventListener("click",()=>{
+            if(state==="x"){
+                state="space"
+                x_element.classList.add("hidden")
+                space_elemnt.classList.remove("hidden")
+                dilog.classList.remove("hidden")
+                
+
+                console.log(state)
+            }else{
+                state="x"
+                console.log(state)
+              
+                space_elemnt.classList.add("hidden")
+                
+                x_element.classList.remove("hidden")
+                dilog.classList.add("hidden")
+
+
+
+            }
+        })
+
+        console.log(icon)
+    </script>
 </body>
+
 </html>
