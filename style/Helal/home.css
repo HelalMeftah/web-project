@@ -1,0 +1,109 @@
+.flex {
+       display: flex;
+       justify-content: space-around;
+
+      font-family: "Poppins", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      position: fixed;
+      width: 100%;
+      background-color: white;
+    
+
+}
+ .div2{
+    display: flex;
+ }
+ .im{
+    height: 40px;
+    width: 35px;
+    margin-top: 10px;
+    transform:rotate(0deg) ;
+    -webkit-transform:rotate(0deg) ;
+    -moz-transform:rotate(0deg) ;
+    -ms-transform:rotate(0deg) ;
+    -o-transform:rotate(0deg) ;
+}
+ .image{
+
+    text-align: center;
+    width: 60px;
+    height: 60px;
+    margin-top: 20px;
+    background-color: #0A2A66;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+
+.flex div {
+    width:calc(90%10);
+    font-family:mont;
+}
+.booking{
+    background-color:#0A2A66;
+    border-radius: 16px;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    -ms-border-radius: 16px;
+    -o-border-radius: 16px;
+    height: 70px;
+    padding: 2px;
+    color: white;
+}
+.hove:hover{
+    color: #D4AF37;
+}
+.hove{
+    font-weight: 200;
+    font-size: 10pt;
+}
+.divback{
+    width: 100%;
+    height: 600px;
+    background-image:url(../../photo/khalid/backg.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    text-align: center;
+    margin-top: 30;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-blend-mode: darken;
+}
+.div3{
+    display: flex;
+    margin-left: 30%;
+}
+.b1{
+ margin-left: 5px;
+ margin-right: 5px;
+ background-color: #D4AF37;
+ color: #0A2A66;
+ border-radius: 4px;
+ -webkit-border-radius: 4px;
+ -moz-border-radius: 4px;
+ -ms-border-radius: 4px;
+ -o-border-radius: 4px;
+ border: transparent;
+}
+.b2{
+ margin-left: 5px;
+ margin-right: 5px;
+ color:white;
+ border-radius: 4px;
+ background-color: transparent;
+ border: 2px solid white;
+ -webkit-border-radius: 4px;
+ -moz-border-radius: 4px;
+ -ms-border-radius: 4px;
+ -o-border-radius: 4px;
+}
+.b2:hover{
+    background-color: white;
+    color: black;
+}
