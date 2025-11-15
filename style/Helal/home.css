@@ -108,10 +108,10 @@
  border-radius: 4px;
  background-color: transparent;
  border: 2px solid white;
- -webkit-border-radius: 4px;
- -moz-border-radius: 4px;
- -ms-border-radius: 4px;
- -o-border-radius: 4px;
+ -webkit-border-radius:;
+ -moz-border-radius:;
+ -ms-border-radius:;
+ -o-border-radius:;
 }
 .b2:hover{
     background-color: white;
@@ -230,10 +230,10 @@ main{
     margin-right: 35px;
     overflow: hidden;
     border-radius: 16px;
-    -webkit-border-radius: 16px;
-    -moz-border-radius: 16px;
-    -ms-border-radius: 16px;
-    -o-border-radius: 16px;
+    -webkit-border-radius:;
+    -moz-border-radius:;
+    -ms-border-radius:;
+    -o-border-radius:;
 }
 .size2{
     width: 350px;
@@ -270,7 +270,6 @@ main{
     height: 40px;
     border-radius: 16px;
     margin-left: 80px;
-
     -webkit-border-radius: 16px;
     -moz-border-radius: 16px;
     -ms-border-radius: 16px;
@@ -288,4 +287,43 @@ main{
     -moz-border-radius: 16px;
     -ms-border-radius: 16px;
     -o-border-radius: 16px;
+}
+.sec2{
+    text-align: center;
+    font-weight: bold;
+}
+.div6{
+    display: flex;
+    justify-content: space-around;
+    margin-left: 10px;
+
+}
+.div6 div{
+    width: calc(90%/6);
+    padding:20px;
+}
+.size3{
+    width: 50px;
+    height: 50px;
+    margin-top: 7px;
+}
+.div7{
+    /* margin-left: 10%; */
+    /* padding-left: 50%; */
+}
+.div7:hover{
+        box-shadow: 0 5px 10px rgb(0, 0, 0,0.15);
+
+
+}
+.nav4{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-left: 25%;
+    background-color: rgb(212, 223, 223);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
 }
