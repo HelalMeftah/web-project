@@ -29,9 +29,9 @@
             <div class="flex justify-around w-full">
                 <h2 class=" hover:text-[#D4AF37] hover:cursor-pointer text-2xl font-sans font-bold"><a
                         href="index.html">Home</a></h2>
-                <h2 class="text-[#D4AF37] hover:cursor-pointer text-2xl font-sans font-bold"><a
+                <h2 class="hover:text-[#D4AF37] hover:cursor-pointer text-2xl font-sans font-bold"><a
                         href="Branches.html">Branch</a></h2>
-                <h2 class="hover:text-[#D4AF37] hover:cursor-pointer text-2xl font-sans font-bold"><a>Rooms</a></h2>
+                <h2 class="text-[#D4AF37]  hover:cursor-pointer text-2xl font-sans font-bold"><a>Rooms</a></h2>
                 <h2 class="hover:text-[#D4AF37] hover:cursor-pointer text-2xl font-sans font-bold"><a>service</a></h2>
                 <h2 class="hover:text-[#D4AF37] hover:cursor-pointer text-2xl font-sans font-bold"><a>Offers</a></h2>
                 <h2 class="hover:text-[#D4AF37] hover:cursor-pointer text-2xl font-sans font-bold"><a>About us</a></h2>
@@ -92,6 +92,223 @@
 
     <!--Rooms section-->
 
+
+    <!--filter section. -->
+    <section class="bg-[#F5F5F5] h-20">
+        <div class="p-5 flex justify-start items-center">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#D4AF37" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-funnel-icon lucide-funnel"><path d="M10 20a1 1 0 0 0 .553.895l2 1A1 1 0 0 0 14 21v-7a2 2 0 0 1 .517-1.341L21.74 4.67A1 1 0 0 0 21 3H3a1 1 0 0 0-.742 1.67l7.225 7.989A2 2 0 0 1 10 14z"/></svg>
+<h4>Filter by:</h4>
+
+<select class="bg-white p-2 rounded-xl ml-2  border border-[#E5E5E5]" id="Room-type">
+    <option>All type</option>
+    <option>Standard room</option>
+    <option>Deluxe room</option>
+    <option>Royal Suite</option>
+
+
+
+</select>
+
+
+<select class="bg-white p-2 rounded-xl ml-2  border border-[#E5E5E5]" id="city">
+    <option>All Branches</option>
+    <option>Makkah</option>
+    <option>Madinah</option>
+    <option>Jeddah</option>
+     <option>Riyadh</option>
+
+
+
+</select>
+
+
+<select class="bg-white p-2 rounded-xl ml-2  border border-[#E5E5E5]" id="price">
+    <option>Price</option>
+    <option>Low to High</option>
+    <option>High to Low</option>
+
+
+
+</select>
+
+        </div>
+    </section>
+
+    <!--end:filter section. -->
+
+
+    
+
+<!-- section for filter-->
+    <section class="mb-4">
+         <!-- rooms section-->
+    <section class="bg-white p-5">
+        <div>
+            <h1 class="text-4xl text-[#0A2A66] font-sans font-bold text-center mt-10 mb-10">Quick Look at Our Rooms</h1>
+            <h3 class="text-center mt-3 text-[#6B7280]">Rooms carefully designed to provide maximum comfort and luxury
+            </h3>
+        </div>
+        <!-- room card-->
+        <div class="flex space-x-10 mt-10 justify-center items-center"  id="all-room">
+            <div class="w-100 shadow-lg hover:shadow-xl h-full  rounded-xl " id="Standard-Room">
+                <div class="relative w-fit overflow-hidden rounded-t-xl ">
+                    <img class="w-100 h-80  hover:scale-[1.2] "
+                        src="https://images.unsplash.com/photo-1641851962761-43d3c1a34360?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjBob3RlbCUyMHN1aXRlJTIwZGVsdXhlfGVufDF8fHx8MTc2MzA0NTM1MXww&ixlib=rb-4.1.0&q=80&w=1080">
+                   
+
+
+                </div>
+                <!-- card title-->
+                <div class="w-full  shadow-lg p-3  rounded-b-xl bg-white">
+                    <h1 class="text-[#000000] font-semibold text-2xl">Standard Room</h1>
+                    <div class="flex justify-start mt-2 items-center">
+                        <img class="w-6 h-6" src="../../photo/khalid/user.png">
+                        <h5 class="text-[#6B7280] font-sans font-normal ml-3">2 Guests</h5>
+                    </div>
+                    <div class="flex justify-around mt-4 mb-3">
+                        <div class="bg-[#F5F5F5] flex w-fit  p-2 rounded-full"><img class="w-5 h-5 " src="../../photo/khalid/star.png"> <p class="ml-2">Wi-Fi</p></div>
+                         <div class="bg-[#F5F5F5] flex w-fit  p-2 rounded-full"><img class="w-5 h-5 " src="../../photo/khalid/star.png"> <p class="ml-2">AC</p></div>
+
+                         <div class="bg-[#F5F5F5] flex w-fit  p-2 rounded-full"><img class="w-5 h-5 " src="../../photo/khalid/star.png"> <p class="ml-2">Private Bath</p></div>
+
+                    </div>
+
+
+                    <hr class=" border-[#E5E5E5] mt-2 mb-4">
+                   
+
+                    <!-- for link to page-->
+                    <div class="flex justify-between items-center mt-5">
+                        <div class="flex flex-col justify-center items-center">
+                            <h3 class="text-[#6B7280] font-sans font-bold ml-3 text-xl">Starting from</h3>
+                            <h4 class="text-[#D4AF37] ">SAR 250</h4>
+                        </div>
+                        <div class="">
+                        <button class="bg-[#0A2A66] text-white p-4 rounded-xl hover:cursor-pointer mt-4 w-30 "> View details</button>
+
+                        </div>
+
+                    </div>
+                </div>
+                <!-- card title-->
+
+            </div>
+
+            <div class="w-100 shadow-lg hover:shadow-xl h-full  rounded-xl " id="Deluxe-Room">
+                <div class="relative w-fit overflow-hidden rounded-t-xl ">
+                    <img class="w-100 h-80  hover:scale-[1.2] "
+                        src="https://images.unsplash.com/photo-1670800050441-e77f8c82963f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjBob3RlbCUyMHJvb20lMjBzdGFuZGFyZHxlbnwxfHx8fDE3NjMwNDUzNTB8MA&ixlib=rb-4.1.0&q=80&w=1080">
+                   
+
+
+                </div>
+                <!-- card title-->
+                <div class="w-full  shadow-lg p-3  rounded-b-xl bg-white">
+                    <h1 class="text-[#000000] font-semibold text-2xl">Deluxe Room</h1>
+                    <div class="flex justify-start mt-2 items-center">
+                        <img class="w-6 h-6" src="../../photo/khalid/user.png">
+                        <h5 class="text-[#6B7280] font-sans font-normal ml-3">3 Guests</h5>
+                    </div>
+                    <div class="flex justify-around mt-4 mb-3 ">
+                                                 <div class="bg-[#F5F5F5] flex w-fit  p-2 rounded-full"><img class="w-5 h-5 " src="../../photo/khalid/star.png"> <p class="ml-2">City View</p></div>
+                         <div class="bg-[#F5F5F5] flex w-fit  p-2 rounded-full"><img class="w-5 h-5 " src="../../photo/khalid/star.png"> <p class="ml-2">Room Service</p></div>
+
+                        <!-- <div class="bg-[#F5F5F5] flex w-fit  p-2 rounded-full"><img class="w-5 h-5 " src="../../photo/khalid/star.png"> <p class="ml-2">Wi-Fi</p></div> -->
+                         <!-- <div class="bg-[#F5F5F5] flex w-fit  p-2 rounded-full mt-1"><img class="w-5 h-5 " src="../../photo/khalid/star.png"> <p class="ml-2">AC</p></div> -->
+
+                         <!-- <div class="bg-[#F5F5F5] flex w-fit  p-2 rounded-full mt-1"><img class="w-5 h-5 " src="../../photo/khalid/star.png"> <p class="ml-2">Private Bath</p></div> -->
+
+                    </div>
+
+
+                    <hr class=" border-[#E5E5E5] mt-2 mb-4">
+                   
+
+                    <!-- for link to page-->
+                    <div class="flex justify-between items-center mt-5">
+                        <div class="flex flex-col justify-center items-center">
+                            <h3 class="text-[#6B7280] font-sans font-bold ml-3 text-xl">Starting from</h3>
+                            <h4 class="text-[#D4AF37] ">SAR 400</h4>
+                        </div>
+                        <div class="">
+                        <button class="bg-[#0A2A66] text-white p-4 rounded-xl hover:cursor-pointer mt-4 w-30 "> View details</button>
+
+                        </div>
+
+                    </div>
+                </div>
+                <!-- card title-->
+
+            </div>
+
+            <div class="w-100 shadow-lg hover:shadow-xl h-full  rounded-xl " id="Royal-Suite">
+                <div class="relative w-fit overflow-hidden rounded-t-xl ">
+                    <img class="w-100 h-80  hover:scale-[1.2] "
+                        src="https://images.unsplash.com/photo-1725623831897-fb009acfe742?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxyb3lhbCUyMGhvdGVsJTIwc3VpdGV8ZW58MXx8fHwxNzYzMDQ1MzUxfDA&ixlib=rb-4.1.0&q=80&w=1080">
+                   
+
+
+                </div>
+                <!-- card title-->
+                <div class="w-full  shadow-lg p-3  rounded-b-xl bg-white" >
+                    <h1 class="text-[#000000] font-semibold text-2xl">Royal Suite</h1>
+                    <div class="flex justify-start mt-2 items-center">
+                        <img class="w-6 h-6" src="../../photo/khalid/user.png">
+                        <h5 class="text-[#6B7280] font-sans font-normal ml-3">4 Guests</h5>
+                    </div>
+                    <div class="flex justify-around mt-4 mb-3">
+                        <div class="bg-[#F5F5F5] flex w-fit  p-2 rounded-full"><img class="w-5 h-5 " src="../../photo/khalid/star.png"> <p class="ml-2">VIP Service</p></div>
+                         <div class="bg-[#F5F5F5] flex w-fit  p-2 rounded-full"><img class="w-5 h-5 " src="../../photo/khalid/star.png"> <p class="ml-2">Living Room</p></div>
+
+                         <!-- <div class="bg-[#F5F5F5] flex w-fit  p-2 rounded-full"><img class="w-5 h-5 " src="../../photo/khalid/star.png"> <p class="ml-2">Private Bath</p></div> -->
+
+                    </div>
+
+
+                    <hr class=" border-[#E5E5E5] mt-2 mb-4">
+                   
+
+                    <!-- for link to page-->
+                    <div class="flex justify-between items-center mt-5" >
+                        <div class="flex flex-col justify-center items-center">
+                            <h3 class="text-[#6B7280] font-sans font-bold ml-3 text-xl">Starting from</h3>
+                            <h4 class="text-[#D4AF37] ">SAR 1200</h4>
+                        </div>
+                        <div class="">
+                        <button class="bg-[#0A2A66] text-white p-4 rounded-xl hover:cursor-pointer mt-4 w-30 "> View details</button>
+
+                        </div>
+
+                    </div>
+                </div>
+                <!-- card title-->
+
+            </div>
+        </div>
+        <!-- end:room card-->
+    </section>
+    </section>
+
+
+
+<!--Subscribe-->
+  <section class="bg-[#F5F5F5] p-30">
+        <div class="p-3 text-center ">
+            <h1 class="text-3xl text-[#0A2A66] font-sans font-bold text-center mt-5">Didn't Find What You're Looking For?</h1>
+            <h3 class="text-center mt-3 text-[#6B7280]">Contact us for help choosing the right room for you</h3>
+        </div>
+
+        <!--input offers-->
+        <div class="flex justify-center items-center ">
+            
+             <button class="bg-[#D4AF37] p-3 rounded-lg mt-2 text-2xl font-sans font-semibold "><a>Content</a></button>
+
+        </div>
+
+         <!--end:input offers-->
+
+     </section>
+<!--end:Subscribe-->
 
 <!-- end:page items -->
 
@@ -166,6 +383,6 @@
 
       <!-- end:footer -->
 
-    
+    <script src="../../js/khalid/Rooms.js"></script>
 </body>
 </html>
