@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+</head>
+
+<body>
+    <header class="flex  justify-between sticky w-full top-0 bottom-0 bg-white z-40">
+        <div class="  h-20 flex md:w-[20%] ml-5  justify-center items-center  ">
+            <div class="bg-[#0A2A66] rounded-full w-fit h-fit p-1 rotate-180 flex justify-center items-center ml-2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24" fill="#D4AF37"
+                    stroke="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-moon-icon lucide-moon">
+                    <path
+                        d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401" />
+                </svg>
+            </div>
+            <div>
+                <h3 class="text-[#0A2A66] font-bold font-sans ">Hilal Hotels</h3>
+                <h3 class="text-[#D4AF37] font-bold">فنادق الهلال</h3>
+
+            </div>
+        </div>
+
+        <nav class="ml-10 justify-center items-center hidden md:flex  w-[60%] ">
+            <div class="flex justify-around w-full">
+                <h2 class="hover:text-[#D4AF37] hover:cursor-pointer text-2xl font-sans font-bold"><a
+                        href="index.html">Home</a></h2>
+                <h2 class="hover:text-[#D4AF37] hover:cursor-pointer text-2xl font-sans font-bold"><a
+                        href="Branches.html">Branch</a></h2>
+                <h2 class="hover:text-[#D4AF37] hover:cursor-pointer text-2xl font-sans font-bold"><a
+                        href="Rooms.html">Rooms</a></h2>
+                <h2 class="hover:text-[#D4AF37] hover:cursor-pointer text-2xl font-sans font-bold"><a
+                        href="service.html">service</a></h2>
+                <h2 class="text-[#D4AF37] hover:cursor-pointer text-2xl font-sans font-bold"><a
+                        href="Offer.html">Offers</a></h2>
+                <h2 class="hover:text-[#D4AF37] hover:cursor-pointer text-2xl font-sans font-bold"><a href="about.html">About us</a></h2>
+                <h2 class="hover:text-[#D4AF37] hover:cursor-pointer text-2xl font-sans font-bold"><a href="Content.html">Content</a></h2>
+
+
+
+            </div>
+
+
+
+
+        </nav>
+        <div class="w-[10%] flex justify-center items-center hidden md:flex ">
+            <button class="bg-[#0A2A66] text-white p-4 rounded-xl hover:cursor-pointer">Book Now</button>
+
+        </div>
+
+        <!-- responsive-->
+        <div class="md:hidden w-[10%] flex justify-center items-center" id="hum-icon">
+            <svg class="remove-one" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-menu-icon lucide-menu">
+                <path d="M4 5h16" />
+                <path d="M4 12h16" />
+                <path d="M4 19h16" />
+            </svg>
+            <svg class="remove-two hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-x-icon lucide-x">
+                <path d="M18 6 6 18" />
+                <path d="m6 6 12 12" />
+            </svg>
+        </div>
+
+
+        <!-- responsive-->
+
+    </header>
+
+
+    <!-- offers item-->
+
+    <!--hero-->
+    <section class="bg-[#0A2A66] mt-5 p-2 h-60">
+        <div class="flex justify-center items-center flex-col mt-6 mb-7">
+            <h1 class="font-bold text-5xl text-white">Special Offers</h1>
+            <h3 class="text-center mt-3 text-[#D1D5DB] text-2xl">Take advantage of our special offers and get the best
+                prices</h3>
+
+        </div>
+
+
+
+    </section>
+
+    <!--end:hero-->
+
+
+    <!--branch card -->
+    <section>
+        <!--card container-->
+        <div class="grid grid-cols-2 grid-rows-2 mt-20">
+            <!-- card flex-->
+            <div class=" flex justify-center items-center">
+                <!--card one-->
+                <div class="rounded-xl m-2  w-150 shadow-lg col-span-1 ">
+                    <div class="relative overflow-hidden">
+                        <img class="w-full h-100  rounded-t-xl hover:scale-[1.2] transition delay-150 duration-300 ease-in-out"
+                            src="https://images.unsplash.com/photo-1670800050441-e77f8c82963f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjBob3RlbCUyMHJvb20lMjBzdGFuZGFyZHxlbnwxfHx8fDE3NjMwNDUzNTB8MA&ixlib=rb-4.1.0&q=80&w=1080">
+                        <span class="absolute top-0 bg-[#D4AF37] p-2 rounded-full m-2 text-[#0A2A66]">25%
+                            discount</span>
+                    </div>
+
+                    <div class="flex justify-start  items-center m-2">
+                        <!--icon-->
+                        <div class="bg-[#E8E8E8] w-fit p-3 rounded-full">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="#D4AF37" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-calendar-icon lucide-calendar">
+                                <path d="M8 2v4" />
+                                <path d="M16 2v4" />
+                                <rect width="18" height="18" x="3" y="4" rx="2" />
+                                <path d="M3 10h18" />
+                            </svg>
+
+                        </div>
+                        <!--end:icon-->
+
+
+                        <h1 class="text-[#0A2A66] font-bold text-2xl ml-1">Special offer for three nights</h1>
+                    </div>
+
+                    <!--description-->
+                    <div class="mb-2 mt-3">
+                        <h3 class="text-[#2B2B2B] text-xl">Book 3 nights and get the 4th night free</h3>
+                        <h5 class="text-sm m-1 text-[#737373] ml-0">Special offer for a limited time on all room types
+                            in all branches</h5>
+                        <div class="flex justify-center items-center">
+                            <hr class="w-[70%] m-2 border-[#E5E5E5]">
+
+                        </div>
+                        <div class="flex justify-between p-2">
+                            <pre class="text-sm text-[#737373]">Valid until the<br>end of the month</pre>
+                            <button class="bg-[#0A2A66] text-white p-3 rounded-lg hover:cursor-pointer">Book
+                                now</button>
+                        </div>
+                    </div>
+                    <!--end:description-->
+
+                </div>
+
+            </div>
+            <!-- card flex-->
+            <!--end:card one-->
+
+
+            <!-- card flex-->
+            <div class=" flex justify-center items-center">
+                <!--card two-->
+                <div class="rounded-xl m-2  w-150 shadow-lg col-span-1 ">
+                    <div class="relative overflow-hidden">
+                        <img class="w-full h-100  rounded-t-xl hover:scale-[1.2] transition delay-150 duration-300 ease-in-out"
+                            src="https://images.unsplash.com/photo-1641851962761-43d3c1a34360?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjBob3RlbCUyMHN1aXRlJTIwZGVsdXhlfGVufDF8fHx8MTc2MzA0NTM1MXww&ixlib=rb-4.1.0&q=80&w=1080">
+                        <span class="absolute top-0 bg-[#D4AF37] p-2 rounded-full m-2 text-[#0A2A66]">20%
+                            discount</span>
+                    </div>
+
+                    <div class="flex justify-start  items-center m-2">
+                        <!--icon-->
+                        <div class="bg-[#E8E8E8] w-fit p-3 rounded-full">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="#D4AF37" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-users-round-icon lucide-users-round">
+                                <path d="M18 21a8 8 0 0 0-16 0" />
+                                <circle cx="10" cy="8" r="5" />
+                                <path d="M22 20c0-3.37-2-6.5-4-8a5 5 0 0 0-.45-8.3" />
+                            </svg>
+                        </div>
+                        <!--end:icon-->
+
+
+                        <h1 class="text-[#0A2A66] font-bold text-2xl ml-1">Family discount</h1>
+                    </div>
+
+                    <!--description-->
+                    <div class="mb-2 mt-3">
+                        <h3 class="text-[#2B2B2B] text-xl">Special discounts for family bookings</h3>
+                        <h5 class="text-sm m-1 text-[#737373] ml-0">Up to 20% discount on family rooms when booking for
+                            more than two people</h5>
+                        <div class="flex justify-center items-center">
+                            <hr class="w-[70%] m-2 border-[#E5E5E5]">
+
+                        </div>
+                        <div class="flex justify-between p-2">
+                            <pre class="text-sm text-[#737373]">Available all year round</pre>
+                            <button class="bg-[#0A2A66] text-white p-3 rounded-lg hover:cursor-pointer">Book
+                                now</button>
+                        </div>
+                    </div>
+                    <!--end:description-->
+
+                </div>
+
+            </div>
+            <!-- card flex-->
+            <!--end:card two-->
+
+
+
+            <!-- card flex-->
+            <div class=" flex justify-center items-center">
+                <!--card three-->
+                <div class="rounded-xl m-2  w-150 shadow-lg col-span-1 ">
+                    <div class="relative overflow-hidden">
+                        <img class="w-full h-100  rounded-t-xl hover:scale-[1.2] transition delay-150 duration-300 ease-in-out"
+                            src="https://images.unsplash.com/photo-1725623831897-fb009acfe742?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxyb3lhbCUyMGhvdGVsJTIwc3VpdGV8ZW58MXx8fHwxNzYzMDQ1MzUxfDA&ixlib=rb-4.1.0&q=80&w=1080">
+                        <span class="absolute top-0 bg-[#D4AF37] p-2 rounded-full m-2 text-[#0A2A66]">15%
+                            discount</span>
+                    </div>
+
+                    <div class="flex justify-start  items-center m-2">
+                        <!--icon-->
+                        <div class="bg-[#E8E8E8] w-fit p-3 rounded-full">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="#D4AF37" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-tag-icon lucide-tag">
+                                <path
+                                    d="M12.586 2.586A2 2 0 0 0 11.172 2H4a2 2 0 0 0-2 2v7.172a2 2 0 0 0 .586 1.414l8.704 8.704a2.426 2.426 0 0 0 3.42 0l6.58-6.58a2.426 2.426 0 0 0 0-3.42z" />
+                                <circle cx="7.5" cy="7.5" r=".5" fill="currentColor" />
+                            </svg>
+                        </div>
+                        <!--end:icon-->
+
+
+                        <h1 class="text-[#0A2A66] font-bold text-2xl ml-1">Early bird offer</h1>
+                    </div>
+
+                    <!--description-->
+                    <div class="mb-2 mt-3">
+                        <h3 class="text-[#2B2B2B] text-xl">Book early and take advantage of the discount</h3>
+                        <h5 class="text-sm m-1 text-[#737373] ml-0">Get a 15% discount when you book 30 days before your
+                            arrival date.</h5>
+                        <div class="flex justify-center items-center">
+                            <hr class="w-[70%] m-2 border-[#E5E5E5]">
+
+                        </div>
+                        <div class="flex justify-between p-2">
+                            <pre class="text-sm text-[#737373]">Valid on <br>all bookings</pre>
+                            <button class="bg-[#0A2A66] text-white p-3 rounded-lg hover:cursor-pointer">Book
+                                now</button>
+                        </div>
+                    </div>
+                    <!--end:description-->
+
+                </div>
+
+            </div>
+            <!-- card flex-->
+            <!--end:card three-->
+
+
+
+            <!-- card flex-->
+            <div class=" flex justify-center items-center">
+                <!--card four-->
+                <div class="rounded-xl m-2  w-150 shadow-lg col-span-1 ">
+                    <div class="relative overflow-hidden">
+                        <img class="w-full h-100  rounded-t-xl hover:scale-[1.2] transition delay-150 duration-300 ease-in-out"
+                            src="https://images.unsplash.com/photo-1592488699970-66c8db178c2b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjBob3RlbCUyMG1lY2NhfGVufDF8fHx8MTc2MzA0NTM0OXww&ixlib=rb-4.1.0&q=80&w=1080">
+                        <span class="absolute top-0 bg-[#D4AF37] p-2 rounded-full m-2 text-[#0A2A66]">Special
+                            offer</span>
+                    </div>
+
+                    <div class="flex justify-start  items-center m-2">
+                        <!--icon-->
+                        <div class="bg-[#E8E8E8] w-fit p-3 rounded-full">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="#D4AF37" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-gift-icon lucide-gift">
+                                <rect x="3" y="8" width="18" height="4" rx="1" />
+                                <path d="M12 8v13" />
+                                <path d="M19 12v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-7" />
+                                <path
+                                    d="M7.5 8a2.5 2.5 0 0 1 0-5A4.8 8 0 0 1 12 8a4.8 8 0 0 1 4.5-5 2.5 2.5 0 0 1 0 5" />
+                            </svg>
+                        </div>
+                        <!--end:icon-->
+
+
+                        <h1 class="text-[#0A2A66] font-bold text-2xl ml-1">Wedding bouquet</h1>
+                    </div>
+
+                    <!--description-->
+                    <div class="mb-2 mt-3">
+                        <h3 class="text-[#2B2B2B] text-xl">Special offer for weddings and honeymoons</h3>
+                        <h5 class="text-sm m-1 text-[#737373] ml-0">An all-inclusive package including a royal suite,
+                            in-room breakfast, and complimentary romantic decor.</h5>
+                        <div class="flex justify-center items-center">
+                            <hr class="w-[70%] m-2 border-[#E5E5E5]">
+
+                        </div>
+                        <div class="flex justify-between p-2">
+                            <pre class="text-sm text-[#737373]">Available <br>year-round</pre>
+                            <button class="bg-[#0A2A66] text-white p-3 rounded-lg">Book now</button>
+                        </div>
+                    </div>
+                    <!--end:description-->
+
+                </div>
+
+            </div>
+            <!-- card flex-->
+            <!--end:card four-->
+
+
+
+
+        </div>
+        <!--end:card container-->
+    </section>
+
+    <!--end:branch card -->
+
+
+    <!--condition-->
+    <section class="bg-[#F5F5F5] p-4 flex justify-center items-center">
+
+        <div class="bg-white w-[50%] p-4 rounded-lg">
+            <h1 class="text-[#0A2A66] font-semibold text-3xl mb-2">Terms and Conditions</h1>
+            <h4 class="text-[#737373] font-bold ">• All offers are subject to availability</h4>
+            <h4 class="text-[#737373] font-bold ">• Two offers cannot be combined at the same time</h4>
+            <h4 class="text-[#737373] font-bold ">• The offer code must be mentioned when booking.</h4>
+            <h4 class="text-[#737373] font-bold ">• Prices may vary depending on the season and demand</h4>
+            <h4 class="text-[#737373] font-bold ">• The hotel reserves the right to modify or cancel offers at any time.</h4>
+            <h4 class="text-[#737373] font-bold ">• Booking must be confirmed at least 48 hours in advance</h4>
+
+        </div>
+
+    </section>
+
+    <!--end:condition-->
+
+
+    <!--more section-->
+    <section class="mt-3 h-100 flex  justify-center items-center flex-col">
+        <div class="p-4 flex justify-center items-center flex-col">
+            <h1 class="text-[#0A2A66] font-semibold text-3xl mb-2 text-center">Do you want to know more?</h1>
+            <h3 class="text-[#737373]">Contact us to inquire about special offers and customized packages.</h3>
+        </div>
+
+        <div class="flex justify-center items-center ">
+            <button class="bg-[#0A2A66] text-white font-semibold p-4 rounded-lg mr-3 hover:cursor-pointer">Book now</button>
+             <button class="text-[#0A2A66] border border-[#171717] p-4 rounded-lg hover:bg-[#171717] hover:text-white hover:cursor-pointer">Contant us</button>
+        </div>
+    </section>
+
+     <!--end:more section-->
+
+    <!-- end:offers item-->
+
+
+
+
+
+
+    <!-- footer -->
+    <footer class="bg-[#0A2A66]  h-70">
+        <!-- footer item-->
+        <div class="grid grid-cols-4">
+
+            <div class=" col-span-1 p-3">
+                <h1 class="text-[#D4AF37] font-semibold text-xl mb-3">Hilal Hotels Chain</h1>
+                <h3 class="text-[#D1D5DB]">Luxury hospitality experience in four major cities of Saudi Arabia</h3>
+            </div>
+
+            <div class=" col-span-1 p-3 space-y-2">
+                <h1 class="text-[#D4AF37] font-semibold text-xl mb-3">Quick Links</h1>
+
+                <h4 class="text-[#D1D5DB]">Home</h4>
+                <h4 class="text-[#D1D5DB]">Branches</h4>
+                <h4 class="text-[#D1D5DB]">Rooms</h4>
+                <h4 class="text-[#D1D5DB]">About Us</h4>
+            </div>
+
+
+            <div class=" col-span-1 p-3">
+                <h1 class="text-[#D4AF37] font-semibold text-xl mb-3">Contact Us</h1>
+                <h3 class="text-[#D1D5DB] flex mb-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                        viewBox="0 0 24 24" fill="none" stroke="#D4AF37" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" class="lucide lucide-phone-icon lucide-phone">
+                        <path
+                            d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384" />
+                    </svg>+966 5XXXXXXXX</h3>
+                <h3 class="text-[#D1D5DB] flex mb-1"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                        viewBox="0 0 24 24" fill="none" stroke="#D4AF37" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" class="lucide lucide-mail-icon lucide-mail">
+                        <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7" />
+                        <rect x="2" y="4" width="20" height="16" rx="2" />
+                    </svg>info@hilalhotels.sa</h3>
+                <h3 class="text-[#D1D5DB] flex mb-1"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                        viewBox="0 0 24 24" fill="none" stroke="#D4AF37" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" class="lucide lucide-map-pin-icon lucide-map-pin">
+                        <path
+                            d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" />
+                        <circle cx="12" cy="10" r="3" />
+                    </svg>Kingdom of Saudi Arabia</h3>
+
+            </div>
+
+
+            <div class=" col-span-1 p-3">
+                <h1 class="text-[#D4AF37] font-semibold text-xl mb-3">Newsletter</h1>
+                <h3 class="text-[#D1D5DB]">Subscribe to get the latest offers</h3>
+                <div class="flex justify-center items-center">
+                    <button class="bg-[#D4AF37] p-3 rounded-lg mt-2">Subscribe</button>
+
+                </div>
+
+                <div class="flex space-x-3 mt-5">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="#D4AF37" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-facebook-icon lucide-facebook">
+                        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="#D4AF37" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-instagram-icon lucide-instagram">
+                        <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                        <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="#D4AF37" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-twitter-icon lucide-twitter">
+                        <path
+                            d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z" />
+                    </svg>
+                </div>
+            </div>
+
+
+
+        </div>
+        <!-- end:footer item-->
+
+        <!-- copyright-->
+        <div>
+            <div class="flex justify-center items-center mt-5">
+                <hr class=" border w-[70%] border-[#364153]">
+
+            </div>
+
+
+            <h1 class="text-center text-white font-semibold mt-3 mb-5">© 2024 Hilal Hotels Chain. All rights reserved.
+            </h1>
+
+        </div>
+        <!-- copyright-->
+    </footer>
+
+    <!-- end:footer -->
+
+
+
+</body>
+
+</html>
