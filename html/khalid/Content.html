@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
 </head>
+
 <body>
-     <header class="flex  justify-between sticky w-full top-0 bottom-0 bg-white z-40">
+    <header class="flex  justify-between sticky w-full top-0 bottom-0 bg-white z-40">
         <div class="  h-20 flex md:w-[20%] ml-5  justify-center items-center  ">
             <div class="bg-[#0A2A66] rounded-full w-fit h-fit p-1 rotate-180 flex justify-center items-center ml-2">
                 <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24" fill="#D4AF37"
@@ -33,10 +35,14 @@
                         href="Branches.html">Branch</a></h2>
                 <h2 class="hover:text-[#D4AF37] hover:cursor-pointer text-2xl font-sans font-bold"><a
                         href="Rooms.html">Rooms</a></h2>
-                <h2 class=" text-[#D4AF37]  hover:cursor-pointer text-2xl font-sans font-bold"><a href="service.html">service</a></h2>
-                <h2 class="hover:text-[#D4AF37] hover:cursor-pointer text-2xl font-sans font-bold"><a href="Offer.html">Offers</a></h2>
-                <h2 class="hover:text-[#D4AF37] hover:cursor-pointer text-2xl font-sans font-bold"><a href="about.html">About us</a></h2>
-                <h2 class="hover:text-[#D4AF37] hover:cursor-pointer text-2xl font-sans font-bold"><a href="Content.html">Content</a></h2>
+                <h2 class=" hover:text-[#D4AF37]  hover:cursor-pointer text-2xl font-sans font-bold"><a
+                        href="service.html">service</a></h2>
+                <h2 class="hover:text-[#D4AF37] hover:cursor-pointer text-2xl font-sans font-bold"><a
+                        href="Offer.html">Offers</a></h2>
+                <h2 class="hover:text-[#D4AF37] hover:cursor-pointer text-2xl font-sans font-bold"><a
+                        href="about.html">About us</a></h2>
+                <h2 class=" text-[#D4AF37] hover:cursor-pointer text-2xl font-sans font-bold"><a
+                        href="Content.html">Content</a></h2>
 
 
 
@@ -90,120 +96,488 @@
 
     <!--contact section-->
     <section>
-    <div class="flex">
+        <div class="flex">
 
-        <div class=" w-[50%]">
-            <!--header for this part-->
-            <div>
-            <h1 class="text-[#0A2A66] ml-2 text-3xl mt-5">Send us a message</h1>
+            <div class=" w-[50%]">
+                <!--header for this part-->
+                <div>
+                    <h1 class="text-[#0A2A66] ml-2 text-3xl mt-5">Send us a message</h1>
+
+                </div>
+                <!--header for this part-->
+
+
+                <div class="flex flex-col p-10 space-y-2">
+                    <label class="text-[#2B2B2B] text-xl">Full name</label>
+                    <input type="text" class="border border-[#E5E5E5] w-[70%] p-2 rounded-xl focus:outline-[#E5E5E5] "
+                        placeholder="Enter your full name">
+
+                    <label class="text-[#2B2B2B] text-xl">Email</label>
+                    <input type="email" class="border border-[#E5E5E5] w-[70%] p-2 rounded-xl focus:outline-[#E5E5E5] "
+                        placeholder="your@gmail.com">
+
+
+                    <label class="text-[#2B2B2B] text-xl">Phone number</label>
+                    <input type="text" class="border border-[#E5E5E5] w-[70%] p-2 rounded-xl focus:outline-[#E5E5E5] "
+                        placeholder="+966 5XXXXXXXX">
+
+
+                    <label class="text-[#2B2B2B] text-xl">Message</label>
+                    <textarea
+                        class="border border-[#E5E5E5] w-[70%] p-2 rounded-xl focus:outline-[#E5E5E5] resize-none h-30"
+                        placeholder="write your massage here"></textarea>
+
+                    <button
+                        class="flex bg-[#0A2A66] w-[70%] justify-center items-center p-4 rounded-lg text-white font-semibold">
+                        <svg class="mr-5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" class="lucide lucide-send-icon lucide-send">
+                            <path
+                                d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z" />
+                            <path d="m21.854 2.147-10.94 10.939" />
+                        </svg>
+                        Send message
+                    </button>
+                </div>
+            </div>
+
+            <!--info-->
+            <div class="w-[50%]">
+                <div>
+                    <h1 class=" text-[#0A2A66] ml-2 text-3xl mt-5">Contact information</h1>
+
+                </div>
+
+                <!--contact info container-->
+                <div>
+
+                    <!--card one-->
+                    <div class="border border-[#E5E5E5] w-[80%] p-3 rounded-lg mt-10  hover:shadow-lg">
+                        <!--icon-->
+                        <div class="flex">
+                            <div class="bg-[#E8E8E8] w-fit p-3 rounded-full h-fit">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"
+                                    fill="none" stroke="#D4AF37" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-phone-icon lucide-phone">
+                                    <path
+                                        d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384" />
+                                </svg>
+                            </div>
+
+                            <div class="flex justify-start  items-start ml-2 text-xl flex-col">
+                                <h3 class="text-left">Phone</h3>
+                                <h4 class="text-[#737373] text-sm">+966 5XXXXXXXX</h4>
+                                <h4 class="text-[#737373] text-sm">Available 24/7</h4>
+
+                            </div>
+
+                        </div>
+                        <!--icon-->
+
+                    </div>
+                    <!--end:card one-->
+
+
+                    <!--card two-->
+                    <div class="border border-[#E5E5E5] w-[80%] p-3 rounded-lg mt-10  hover:shadow-lg">
+                        <!--icon-->
+                        <div class="flex">
+                            <div class="bg-[#E8E8E8] w-fit p-3 rounded-full h-fit">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="#D4AF37" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-mail-icon lucide-mail">
+                                    <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7" />
+                                    <rect x="2" y="4" width="20" height="16" rx="2" />
+                                </svg>
+
+                            </div>
+
+                            <div class="flex justify-start  items-start ml-2 text-xl flex-col">
+                                <h3 class="text-left">Email</h3>
+                                <h4 class="text-[#737373] text-sm">info@hilalhotels.sa</h4>
+                                <h4 class="text-[#737373] text-sm">We will respond within 24 hours</h4>
+
+                            </div>
+
+                        </div>
+                        <!--icon-->
+
+                    </div>
+                    <!--end:card two-->
+
+
+                    <!--card two-->
+                    <div class="border border-[#E5E5E5] w-[80%] p-3 rounded-lg mt-10  hover:shadow-lg">
+                        <!--icon-->
+                        <div class="flex">
+                            <div class="bg-[#E8E8E8] w-fit p-3 rounded-full h-fit">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="#D4AF37" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-hourglass-icon lucide-hourglass">
+                                    <path d="M5 22h14" />
+                                    <path d="M5 2h14" />
+                                    <path
+                                        d="M17 22v-4.172a2 2 0 0 0-.586-1.414L12 12l-4.414 4.414A2 2 0 0 0 7 17.828V22" />
+                                    <path d="M7 2v4.172a2 2 0 0 0 .586 1.414L12 12l4.414-4.414A2 2 0 0 0 17 6.172V2" />
+                                </svg>
+                            </div>
+
+                            <div class="flex justify-start  items-start ml-2 text-xl flex-col">
+                                <h3 class="text-left">Working hours</h3>
+                                <h4 class="text-[#737373] text-sm">24-hour reception</h4>
+                                <h4 class="text-[#737373] text-sm">All days of the week</h4>
+
+                            </div>
+
+                        </div>
+                        <!--icon-->
+
+                    </div>
+                    <!--end:card two-->
+
+
+
+
+                </div>
+                <!--end:contact info container-->
 
             </div>
-             <!--header for this part-->
+            <!--end:info-->
 
-
-            <div class="flex flex-col p-3">
-                <label class="text-[#2B2B2B] text-xl">Full name</label>
-                <input type="text" class="border border-[#E5E5E5] w-[70%] p-2 rounded-xl focus:outline-[#E5E5E5] " placeholder="Enter your full name">
-
-                <label class="text-[#2B2B2B] text-xl">Email</label>
-                <input type="text" class="border border-[#E5E5E5] w-[70%] p-2 rounded-xl focus:outline-[#E5E5E5] " placeholder="Enter your full name">
-
-
-                <label class="text-[#2B2B2B] text-xl">Phone number</label>
-                <input type="text" class="border border-[#E5E5E5] w-[70%] p-2 rounded-xl focus:outline-[#E5E5E5] " placeholder="Enter your full name">
-
-
-                <label class="text-[#2B2B2B] text-xl">Message</label>
-                <input type="text" class="border border-[#E5E5E5] w-[70%] p-2 rounded-xl focus:outline-[#E5E5E5] " placeholder="Enter your full name">
-            </div>
         </div>
-
-        <div class="bg-red-500 w-[50%]">
-            <div>
-            <h1>Contact information</h1>
-
-            </div>
-
-        </div>
-
-    </div>
 
     </section>
 
-     <!--end:contact section-->
+    <!--end:contact section-->
+
+
+    <!--contact branch-->
+    <section class="bg-[#F5F5F5]">
+        <div class="p-3">
+            <h1 class=" text-[#0A2A66] ml-2 text-3xl mt-5 text-center mb-4">Contact our branches</h1>
+        </div>
+
+        <!--branch card container-->
+        <div class="flex space-x-3 p-5">
+            <!--card one-->
+            <div class="bg-white w-[25%] rounded-xl space-y-2 p-3 hover:shadow-lg">
+                <h3 class="text-[#0A2A66] font-semibold text-2xl">Makkah</h3>
+
+                <!--icon and text-->
+                <div class="flex space-x-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="#D4AF37" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-phone-icon lucide-phone">
+                        <path
+                            d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384" />
+                    </svg>
+                    <h3 class="text-[#737373]">+966 5XXXXXXXX</h3>
+
+                </div>
+
+                <div class="flex space-x-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="#D4AF37" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-mail-icon lucide-mail">
+                        <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7" />
+                        <rect x="2" y="4" width="20" height="16" rx="2" />
+                    </svg>
+                    <h3 class="text-[#737373]">makkah@hilalhotels.sa</h3>
+
+                </div>
+
+                <div class="flex space-x-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="#D4AF37" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-map-pin-icon lucide-map-pin">
+                        <path
+                            d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" />
+                        <circle cx="12" cy="10" r="3" />
+                    </svg>
+                    <h3 class="text-[#737373]">Near the Holy Mosque in Mecca</h3>
+
+                </div>
+                <!--icon and text-->
+
+
+            </div>
+            <!--end:ard one-->
+
+
+            <!--card two-->
+            <div class="bg-white w-[25%] rounded-xl space-y-2 p-5 hover:shadow-lg">
+                <h3 class="text-[#0A2A66] font-semibold text-2xl">Madinah</h3>
+
+                <!--icon and text-->
+                <div class="flex space-x-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="#D4AF37" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-phone-icon lucide-phone">
+                        <path
+                            d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384" />
+                    </svg>
+                    <h3 class="text-[#737373]">+966 5XXXXXXXX</h3>
+
+                </div>
+
+                <div class="flex space-x-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="#D4AF37" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-mail-icon lucide-mail">
+                        <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7" />
+                        <rect x="2" y="4" width="20" height="16" rx="2" />
+                    </svg>
+                    <h3 class="text-[#737373]">madinah@hilalhotels.sa</h3>
+
+                </div>
+
+                <div class="flex space-x-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="#D4AF37" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-map-pin-icon lucide-map-pin">
+                        <path
+                            d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" />
+                        <circle cx="12" cy="10" r="3" />
+                    </svg>
+                    <h3 class="text-[#737373]">Near the Prophet's Mosque</h3>
+
+                </div>
+                <!--icon and text-->
+
+
+            </div>
+            <!--end:card two-->
+
+
+
+            <!--card three-->
+            <div class="bg-white w-[25%] rounded-xl space-y-2 p-3 hover:shadow-lg">
+                <h3 class="text-[#0A2A66] font-semibold text-2xl">Jeddah</h3>
+
+                <!--icon and text-->
+                <div class="flex space-x-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="#D4AF37" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-phone-icon lucide-phone">
+                        <path
+                            d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384" />
+                    </svg>
+                    <h3 class="text-[#737373]">+966 5XXXXXXXX</h3>
+
+                </div>
+
+                <div class="flex space-x-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="#D4AF37" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-mail-icon lucide-mail">
+                        <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7" />
+                        <rect x="2" y="4" width="20" height="16" rx="2" />
+                    </svg>
+                    <h3 class="text-[#737373]">jeddah@hilalhotels.sa</h3>
+
+                </div>
+
+                <div class="flex space-x-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="#D4AF37" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-map-pin-icon lucide-map-pin">
+                        <path
+                            d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" />
+                        <circle cx="12" cy="10" r="3" />
+                    </svg>
+                    <h3 class="text-[#737373]">Jeddah Corniche, Red Sea</h3>
+
+                </div>
+                <!--icon and text-->
+
+
+            </div>
+            <!--end:card three-->
+
+
+
+
+            <!--card four-->
+            <div class="bg-white w-[25%] rounded-xl space-y-2 p-3 hover:shadow-lg">
+                <h3 class="text-[#0A2A66] font-semibold text-2xl">Riyadh</h3>
+
+                <!--icon and text-->
+                <div class="flex space-x-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="#D4AF37" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-phone-icon lucide-phone">
+                        <path
+                            d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384" />
+                    </svg>
+                    <h3 class="text-[#737373]">+966 5XXXXXXXX</h3>
+
+                </div>
+
+                <div class="flex space-x-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="#D4AF37" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-mail-icon lucide-mail">
+                        <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7" />
+                        <rect x="2" y="4" width="20" height="16" rx="2" />
+                    </svg>
+                    <h3 class="text-[#737373]">riyadh@hilalhotels.sa</h3>
+
+                </div>
+
+                <div class="flex space-x-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="#D4AF37" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-map-pin-icon lucide-map-pin">
+                        <path
+                            d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" />
+                        <circle cx="12" cy="10" r="3" />
+                    </svg>
+                    <h3 class="text-[#737373]">City Center, Riyadh</h3>
+
+                </div>
+                <!--icon and text-->
+
+
+            </div>
+            <!--end:card four-->
+
+        </div>
+        <!--end:branch card container-->
+    </section>
+
+
+
+    <!--map-->
+    <section>
+        <div class="p-10">
+            <h1 class="font-semibold text-[#0A2A66] ml-2 text-4xl mt-5 text-center mb-4">location</h1>
+        </div>
+
+
+        <div class=" flex flex-col justify-center items-center  mb-10">
+            <div class="w-[80%] bg-[#F5F5F5] rounded-lg h-100 flex flex-col justify-center items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24" fill="none"
+                stroke="#D4AF37" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-map-pin-icon lucide-map-pin">
+                <path
+                    d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" />
+                <circle cx="12" cy="10" r="3" />
+            </svg>
+            <h1 class="text-3xl">Map</h1>
+
+        </div>
+        </div>
+    </section>
+
+    <!--end:map-->
+
+    <!--end:contact branch-->
 
     <!--end:content item-->
 
 
 
-     <!-- footer -->
-      <footer class="bg-[#0A2A66]  h-70">
+    <!-- footer -->
+    <footer class="bg-[#0A2A66]  h-70">
         <!-- footer item-->
-            <div class="grid grid-cols-4">
+        <div class="grid grid-cols-4">
 
-                <div class=" col-span-1 p-3">
-                    <h1 class="text-[#D4AF37] font-semibold text-xl mb-3">Hilal Hotels Chain</h1>
-                    <h3 class="text-[#D1D5DB]">Luxury hospitality experience in four major cities of Saudi Arabia</h3>
-                </div>
+            <div class=" col-span-1 p-3">
+                <h1 class="text-[#D4AF37] font-semibold text-xl mb-3">Hilal Hotels Chain</h1>
+                <h3 class="text-[#D1D5DB]">Luxury hospitality experience in four major cities of Saudi Arabia</h3>
+            </div>
 
-                <div class=" col-span-1 p-3 space-y-2">
-                    <h1 class="text-[#D4AF37] font-semibold text-xl mb-3">Quick Links</h1>
-     
-                    <h4 class="text-[#D1D5DB]">Home</h4>
-                      <h4 class="text-[#D1D5DB]">Branches</h4>
-                        <h4 class="text-[#D1D5DB]">Rooms</h4>
-                          <h4 class="text-[#D1D5DB]">About Us</h4>
-                </div>
+            <div class=" col-span-1 p-3 space-y-2">
+                <h1 class="text-[#D4AF37] font-semibold text-xl mb-3">Quick Links</h1>
 
-
-                 <div class=" col-span-1 p-3">
-                    <h1 class="text-[#D4AF37] font-semibold text-xl mb-3">Contact Us</h1>
-                    <h3 class="text-[#D1D5DB] flex mb-2"><svg  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#D4AF37" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone-icon lucide-phone"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"/></svg>+966 5XXXXXXXX</h3>
-                    <h3 class="text-[#D1D5DB] flex mb-1"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#D4AF37" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail-icon lucide-mail"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"/><rect x="2" y="4" width="20" height="16" rx="2"/></svg>info@hilalhotels.sa</h3>
-                     <h3 class="text-[#D1D5DB] flex mb-1"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#D4AF37" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin-icon lucide-map-pin"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>Kingdom of Saudi Arabia</h3>
-
-                </div>
+                <h4 class="text-[#D1D5DB]">Home</h4>
+                <h4 class="text-[#D1D5DB]">Branches</h4>
+                <h4 class="text-[#D1D5DB]">Rooms</h4>
+                <h4 class="text-[#D1D5DB]">About Us</h4>
+            </div>
 
 
-                 <div class=" col-span-1 p-3">
-                    <h1 class="text-[#D4AF37] font-semibold text-xl mb-3">Newsletter</h1>
-                    <h3 class="text-[#D1D5DB]">Subscribe to get the latest offers</h3>
-                    <div class="flex justify-center items-center">
+            <div class=" col-span-1 p-3">
+                <h1 class="text-[#D4AF37] font-semibold text-xl mb-3">Contact Us</h1>
+                <h3 class="text-[#D1D5DB] flex mb-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                        viewBox="0 0 24 24" fill="none" stroke="#D4AF37" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" class="lucide lucide-phone-icon lucide-phone">
+                        <path
+                            d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384" />
+                    </svg>+966 5XXXXXXXX</h3>
+                <h3 class="text-[#D1D5DB] flex mb-1"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                        viewBox="0 0 24 24" fill="none" stroke="#D4AF37" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" class="lucide lucide-mail-icon lucide-mail">
+                        <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7" />
+                        <rect x="2" y="4" width="20" height="16" rx="2" />
+                    </svg>info@hilalhotels.sa</h3>
+                <h3 class="text-[#D1D5DB] flex mb-1"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                        viewBox="0 0 24 24" fill="none" stroke="#D4AF37" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" class="lucide lucide-map-pin-icon lucide-map-pin">
+                        <path
+                            d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" />
+                        <circle cx="12" cy="10" r="3" />
+                    </svg>Kingdom of Saudi Arabia</h3>
+
+            </div>
+
+
+            <div class=" col-span-1 p-3">
+                <h1 class="text-[#D4AF37] font-semibold text-xl mb-3">Newsletter</h1>
+                <h3 class="text-[#D1D5DB]">Subscribe to get the latest offers</h3>
+                <div class="flex justify-center items-center">
                     <button class="bg-[#D4AF37] p-3 rounded-lg mt-2">Subscribe</button>
 
-                    </div>
-
-                    <div class="flex space-x-3 mt-5">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#D4AF37" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-facebook-icon lucide-facebook"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#D4AF37" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-instagram-icon lucide-instagram"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#D4AF37" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-twitter-icon lucide-twitter"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg>
-                    </div>
                 </div>
 
-                
-               
+                <div class="flex space-x-3 mt-5">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="#D4AF37" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-facebook-icon lucide-facebook">
+                        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="#D4AF37" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-instagram-icon lucide-instagram">
+                        <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                        <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="#D4AF37" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-twitter-icon lucide-twitter">
+                        <path
+                            d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z" />
+                    </svg>
+                </div>
             </div>
-             <!-- end:footer item-->
 
-             <!-- copyright-->
-              <div>
-                <div class="flex justify-center items-center mt-5">
-                                    <hr class=" border w-[70%] border-[#364153]">
 
-                </div>
 
-                
-                    <h1 class="text-center text-white font-semibold mt-3 mb-5">© 2024 Hilal Hotels Chain. All rights reserved.</h1>
-                
-              </div>
-              <!-- copyright-->
-      </footer>
+        </div>
+        <!-- end:footer item-->
 
-      <!-- end:footer -->
+        <!-- copyright-->
+        <div>
+            <div class="flex justify-center items-center mt-5">
+                <hr class=" border w-[70%] border-[#364153]">
+
+            </div>
+
+
+            <h1 class="text-center text-white font-semibold mt-3 mb-5">© 2024 Hilal Hotels Chain. All rights reserved.
+            </h1>
+
+        </div>
+        <!-- copyright-->
+    </footer>
+
+    <!-- end:footer -->
 
 
 
 
 
 </body>
+
 </html>
