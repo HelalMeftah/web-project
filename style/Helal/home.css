@@ -67,9 +67,6 @@
 .hove:hover{
     color: #D4AF37;
 }
-.hovee:hover{
-    color: #D4AF37;
-}
 .hove{
     font-weight: 200;
     font-size: 10pt;
@@ -147,16 +144,8 @@ main{
 .size{
     width: 350px;
     height: 380px;
-    /*transition-duration: 2s;
-    */transition:transform 1s ease ;
-    -webkit-transition:transform 1s ease ;
-    -moz-transition:transform 1s ease ;
-    -ms-transition:transform 1s ease ;
-    -o-transition:transform 1s ease ;
-    -webkit-border-radius:;
-    -moz-border-radius:;
-    -ms-border-radius:;
-    -o-border-radius:;
+     transition:transform 1s ease ;
+    
 }
 .size:hover{
     /*width: 500px;
