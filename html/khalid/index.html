@@ -31,9 +31,9 @@
 
         <nav class="ml-10 justify-center items-center hidden md:flex  w-[60%] ">
             <div class="flex justify-around w-full">
-                <h2 class="text-[#D4AF37] hover:cursor-pointer text-2xl font-sans font-bold"><a>Home</a></h2>
-                <h2 class="hover:text-[#D4AF37] hover:cursor-pointer text-2xl font-sans font-bold"><a>Branch</a></h2>
-                <h2 class="hover:text-[#D4AF37] hover:cursor-pointer text-2xl font-sans font-bold"><a>Rooms</a></h2>
+                <h2 class="text-[#D4AF37] hover:cursor-pointer text-2xl font-sans font-bold"><a href="index.html">Home</a></h2>
+                <h2 class="hover:text-[#D4AF37] hover:cursor-pointer text-2xl font-sans font-bold"><a href="Branches.html">Branch</a></h2>
+                <h2 class="hover:text-[#D4AF37] hover:cursor-pointer text-2xl font-sans font-bold"><a href="Rooms.html">Rooms</a></h2>
                 <h2 class="hover:text-[#D4AF37] hover:cursor-pointer text-2xl font-sans font-bold"><a>service</a></h2>
                 <h2 class="hover:text-[#D4AF37] hover:cursor-pointer text-2xl font-sans font-bold"><a>Offers</a></h2>
                 <h2 class="hover:text-[#D4AF37] hover:cursor-pointer text-2xl font-sans font-bold"><a>About us</a></h2>
@@ -735,39 +735,7 @@
 
 
 
-    <script>
-        let dilog = document.querySelector("#dilog")
-        let state = "x"
-        let icon = document.querySelector("#hum-icon");
-        let x_element = document.querySelector(".remove-one")
-        let space_elemnt = document.querySelector(".remove-two")
-
-
-        icon.addEventListener("click", () => {
-            if (state === "x") {
-                state = "space"
-                x_element.classList.add("hidden")
-                space_elemnt.classList.remove("hidden")
-                dilog.classList.remove("hidden")
-
-
-                console.log(state)
-            } else {
-                state = "x"
-                console.log(state)
-
-                space_elemnt.classList.add("hidden")
-
-                x_element.classList.remove("hidden")
-                dilog.classList.add("hidden")
-
-
-
-            }
-        })
-
-        console.log(icon)
-    </script>
+    <script src="../../js/khalid/script.js"></script>
 </body>
 
 </html>

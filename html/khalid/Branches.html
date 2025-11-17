@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+</head>
+
+<body>
+
+    <header class="flex  justify-between sticky w-full top-0 bottom-0 bg-white z-40">
+        <div class="  h-20 flex md:w-[20%] ml-5  justify-center items-center  ">
+            <div class="bg-[#0A2A66] rounded-full w-fit h-fit p-1 rotate-180 flex justify-center items-center ml-2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24" fill="#D4AF37"
+                    stroke="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-moon-icon lucide-moon">
+                    <path
+                        d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401" />
+                </svg>
+            </div>
+            <div>
+                <h3 class="text-[#0A2A66] font-bold font-sans ">Hilal Hotels</h3>
+                <h3 class="text-[#D4AF37] font-bold">فنادق الهلال</h3>
+
+            </div>
+        </div>
+
+        <nav class="ml-10 justify-center items-center hidden md:flex  w-[60%] ">
+            <div class="flex justify-around w-full">
+                <h2 class=" hover:text-[#D4AF37] hover:cursor-pointer text-2xl font-sans font-bold"><a
+                        href="index.html">Home</a></h2>
+                <h2 class="text-[#D4AF37] hover:cursor-pointer text-2xl font-sans font-bold"><a
+                        href="Branches.html">Branch</a></h2>
+                <h2 class="hover:text-[#D4AF37] hover:cursor-pointer text-2xl font-sans font-bold"><a href="Rooms.html">Rooms</a></h2>
+                <h2 class="hover:text-[#D4AF37] hover:cursor-pointer text-2xl font-sans font-bold"><a>service</a></h2>
+                <h2 class="hover:text-[#D4AF37] hover:cursor-pointer text-2xl font-sans font-bold"><a>Offers</a></h2>
+                <h2 class="hover:text-[#D4AF37] hover:cursor-pointer text-2xl font-sans font-bold"><a>About us</a></h2>
+                <h2 class="hover:text-[#D4AF37] hover:cursor-pointer text-2xl font-sans font-bold"><a>Content</a></h2>
+
+
+
+            </div>
+
+
+
+
+        </nav>
+        <div class="w-[10%] flex justify-center items-center hidden md:flex ">
+            <button class="bg-[#0A2A66] text-white p-4 rounded-xl hover:cursor-pointer">Book Now</button>
+
+        </div>
+
+        <!-- responsive-->
+        <div class="md:hidden w-[10%] flex justify-center items-center" id="hum-icon">
+            <svg class="remove-one" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-menu-icon lucide-menu">
+                <path d="M4 5h16" />
+                <path d="M4 12h16" />
+                <path d="M4 19h16" />
+            </svg>
+            <svg class="remove-two hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-x-icon lucide-x">
+                <path d="M18 6 6 18" />
+                <path d="m6 6 12 12" />
+            </svg>
+        </div>
+
+
+        <!-- responsive-->
+
+    </header>
+
+
+
+
+    <!--items-->
+
+
+    <!--Branch section-->
+    <section class="bg-[#0A2A66] mt-5 p-2 h-60">
+        <div class="flex justify-center items-center flex-col mt-6 mb-7">
+            <h1 class="font-bold text-5xl text-white">Our Branches</h1>
+            <h3 class="text-center mt-3 text-[#D1D5DB] text-2xl">Four premium locations in the Kingdom's most important
+                cities</h3>
+
+        </div>
+
+
+    </section>
+
+
+    <!--Branch section-->
+
+    <section class="bg-white gird grid-cols-2 p-3 mb-30">
+       <!-- <div>
+            <h1 class="text-4xl text-[#0A2A66] font-sans font-bold text-center">Our Branches</h1>
+            <h3 class="text-center mt-3 text-[#6B7280]">Choose from four premium locations in the Kingdom's most
+                important cities</h3>
+        </div> -->
+
+        <!-- start for crad-->
+        <div class="mt-10  flex space-x-10 w-full h-fit col-span-1 ">
+            <!--first card-->
+            <div class="w-fit md:w-[50%] h-full shadow-lg hover:shadow-xl rounded-xl ml-3">
+                <div class="relative w-full overflow-hidden rounded-t-xl ">
+                    <img class="w-full h-80  hover:scale-[1.2] "
+                        src="https://images.unsplash.com/photo-1565828480412-f95f33fe9e70?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                    <div class="absolute bottom-0 right-0  flex justify-center items-center p-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"
+                            fill="#D4AF37" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" class="lucide lucide-map-pin-icon lucide-map-pin">
+                            <path
+                                d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" />
+                            <circle cx="12" cy="10" r="3" />
+                        </svg>
+                        <h1 class="text-white font-sans font-bold text-3xl ">Makkah</h1>
+                    </div>
+
+
+                </div>
+                <!-- card title-->
+                <div class="w-full  shadow-lg p-3  rounded-xl">
+                    <h1 class="text-[#6B7280]">Close to the Holy Mosque, offering premium services for visitors and pilgrims with stunning views and 24-hour reception</h1>
+                    <!-- for link to page-->
+                    <div class="flex items-center justify-center ">
+                        <button class="bg-[#0A2A66] text-white p-4 rounded-xl hover:cursor-pointer mt-4 w-[90%] "> <a
+                                class="flex text-cneter flex justify-center items-center ">View Details <img
+                                    class="w-7 ml-2  h-7 rotate-180 fill-white"
+                                    src="../../photo/khalid/right-arrow (1).png"> </a></button>
+
+                    </div>
+                </div>
+                <!-- card title-->
+
+            </div>
+
+            <!-- end:first card-->
+
+            <!--second card-->
+            <div class="w-[50%] shadow-lg hover:shadow-xl h-full   rounded-xl ">
+                <div class="relative w-full overflow-hidden rounded-t-xl ">
+                    <img class="w-full h-80  hover:scale-[1.2] "
+                        src="https://plus.unsplash.com/premium_photo-1670745800247-271e8977da41?q=80&w=928&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                    <div class="absolute bottom-0 right-0  flex justify-center items-center p-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"
+                            fill="#D4AF37" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" class="lucide lucide-map-pin-icon lucide-map-pin">
+                            <path
+                                d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" />
+                            <circle cx="12" cy="10" r="3" />
+                        </svg>
+                        <h1 class="text-white font-sans font-bold text-3xl ">Madinah</h1>
+                    </div>
+
+
+                </div>
+                <!-- card title-->
+                <div class="w-full  shadow-lg p-3  rounded-xl">
+                    <h1 class="text-[#6B7280]">Comfortable hospitality near the Prophet's Mosque, spacious family rooms and complimentary shuttle service to the mosque</h1>
+                    <!-- for link to page-->
+                    <div class="flex items-center justify-center">
+
+                        <button
+                            class="bg-[#0A2A66] text-white p-4 rounded-xl hover:cursor-pointer mt-4 w-[90%] hover:space-x-10 ">
+                            <a class="flex text-cneter flex justify-center items-center ">View Details <img
+                                    class="w-7 ml-2 h-7 rotate-180 fill-white"
+                                    src="../../photo/khalid/right-arrow (1).png"> </a></button>
+
+                    </div>
+                </div>
+                <!-- card title-->
+
+            </div>
+            <!--end:second card-->
+
+
+            <!--third card-->
+            <div class="w-[50%] shadow-lg hover:shadow-xl  h-full  rounded-xl ">
+                <div class="relative w-full overflow-hidden rounded-t-xl ">
+                    <img class="w-full h-80  hover:scale-[1.2] "
+                        src="https://images.unsplash.com/photo-1585085952480-811ff8859fa1?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                    <div class="absolute bottom-0 right-0  flex justify-center items-center p-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"
+                            fill="#D4AF37" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" class="lucide lucide-map-pin-icon lucide-map-pin">
+                            <path
+                                d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" />
+                            <circle cx="12" cy="10" r="3" />
+                        </svg>
+                        <h1 class="text-white font-sans font-bold text-3xl ">Jeddah</h1>
+                    </div>
+
+
+                </div>
+                <!-- card title-->
+                <div class="w-full  shadow-lg p-3  rounded-xl">
+                    <h1 class="text-[#6B7280]">Stunning sea view on Jeddah Corniche, outdoor pool and fine dining restaurants with a distinctive modern experience</h1>
+                    <!-- for link to page-->
+                    <div class="flex justify-center items-center mt-5">
+                        <button class="bg-[#0A2A66] text-white p-4 rounded-xl hover:cursor-pointer mt-4 w-[90%] "> <a
+                                class="flex text-cneter flex justify-center items-center ">View Details <img
+                                    class="w-7 ml-2 h-7 rotate-180 fill-white"
+                                    src="../../photo/khalid/right-arrow (1).png"> </a></button>
+
+                    </div>
+                </div>
+                <!-- card title-->
+
+            </div>
+
+            <!--end:third card-->
+
+            <!--four card-->
+            <div class="w-[50%] shadow-lg hover:shadow-xl h-full  rounded-xl ">
+                <div class="relative w-full overflow-hidden rounded-t-xl ">
+                    <img class="w-full h-80  hover:scale-[1.2] "
+                        src="https://images.unsplash.com/photo-1669101564304-1da32c23f8ec?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                    <div class="absolute bottom-0 right-0  flex justify-center items-center p-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"
+                            fill="#D4AF37" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" class="lucide lucide-map-pin-icon lucide-map-pin">
+                            <path
+                                d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" />
+                            <circle cx="12" cy="10" r="3" />
+                        </svg>
+                        <h1 class="text-white font-sans font-bold text-3xl ">Riyadh</h1>
+                    </div>
+
+
+                </div>
+                <!-- card title-->
+                <div class="w-full  shadow-lg p-3  rounded-xl">
+                    <h1 class="text-[#6B7280]">Central location in the heart of the capital, ideal for business travelers with equipped meeting rooms and comprehensive business services</h1>
+                    <!-- for link to page-->
+                    <div class="flex justify-center items-center mt-3">
+                        <button class="bg-[#0A2A66] text-white p-4 rounded-xl hover:cursor-pointer  w-[90%] "> <a
+                                class="flex text-cneter flex justify-center items-center ">View Details <img
+                                    class="w-7 ml-2 hover:ml-4 h-7 rotate-180 fill-white"
+                                    src="../../photo/khalid/right-arrow (1).png"> </a></button>
+
+                    </div>
+                </div>
+                <!-- card title-->
+
+            </div>
+
+
+            <!--end:four card-->
+
+        </div>
+
+        <!-- end for crad-->
+    </section>
+
+    <!--end:Branch section-->
+
+
+<!--Subscribe-->
+  <section class="bg-[#F5F5F5] p-30">
+        <div class="p-3 text-center ">
+            <h1 class="text-3xl text-[#0A2A66] font-sans font-bold text-center mt-5">Ready to Book?</h1>
+            <h3 class="text-center mt-3 text-[#6B7280]">Book now and enjoy a luxurious stay at any of our branches</h3>
+        </div>
+
+        <!--input offers-->
+        <div class="flex justify-center items-center ">
+            
+            <button class="bg-[#0A2A66] text-white p-4 rounded-xl hover:cursor-pointer "><a>Book now</a></button>
+        </div>
+
+         <!--end:input offers-->
+
+     </section>
+<!--end:Subscribe-->
+
+
+
+
+    <!--end:items-->
+
+
+
+
+
+    <!-- footer -->
+    <footer class="bg-[#0A2A66]  h-70">
+        <!-- footer item-->
+        <div class="grid grid-cols-4">
+
+            <div class=" col-span-1 p-3">
+                <h1 class="text-[#D4AF37] font-semibold text-xl mb-3">Hilal Hotels Chain</h1>
+                <h3 class="text-[#D1D5DB]">Luxury hospitality experience in four major cities of Saudi Arabia</h3>
+            </div>
+
+            <div class=" col-span-1 p-3 space-y-2">
+                <h1 class="text-[#D4AF37] font-semibold text-xl mb-3">Quick Links</h1>
+
+                <h4 class="text-[#D1D5DB]">Home</h4>
+                <h4 class="text-[#D1D5DB]">Branches</h4>
+                <h4 class="text-[#D1D5DB]">Rooms</h4>
+                <h4 class="text-[#D1D5DB]">About Us</h4>
+            </div>
+
+
+            <div class=" col-span-1 p-3">
+                <h1 class="text-[#D4AF37] font-semibold text-xl mb-3">Contact Us</h1>
+                <h3 class="text-[#D1D5DB] flex mb-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                        viewBox="0 0 24 24" fill="none" stroke="#D4AF37" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" class="lucide lucide-phone-icon lucide-phone">
+                        <path
+                            d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384" />
+                    </svg>+966 5XXXXXXXX</h3>
+                <h3 class="text-[#D1D5DB] flex mb-1"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                        viewBox="0 0 24 24" fill="none" stroke="#D4AF37" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" class="lucide lucide-mail-icon lucide-mail">
+                        <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7" />
+                        <rect x="2" y="4" width="20" height="16" rx="2" />
+                    </svg>info@hilalhotels.sa</h3>
+                <h3 class="text-[#D1D5DB] flex mb-1"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                        viewBox="0 0 24 24" fill="none" stroke="#D4AF37" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" class="lucide lucide-map-pin-icon lucide-map-pin">
+                        <path
+                            d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" />
+                        <circle cx="12" cy="10" r="3" />
+                    </svg>Kingdom of Saudi Arabia</h3>
+
+            </div>
+
+
+            <div class=" col-span-1 p-3">
+                <h1 class="text-[#D4AF37] font-semibold text-xl mb-3">Newsletter</h1>
+                <h3 class="text-[#D1D5DB]">Subscribe to get the latest offers</h3>
+                <div class="flex justify-center items-center">
+                    <button class="bg-[#D4AF37] p-3 rounded-lg mt-2">Subscribe</button>
+
+                </div>
+
+                <div class="flex space-x-3 mt-5">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="#D4AF37" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-facebook-icon lucide-facebook">
+                        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="#D4AF37" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-instagram-icon lucide-instagram">
+                        <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                        <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="#D4AF37" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-twitter-icon lucide-twitter">
+                        <path
+                            d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z" />
+                    </svg>
+                </div>
+            </div>
+
+
+
+        </div>
+        <!-- end:footer item-->
+
+        <!-- copyright-->
+        <div>
+            <div class="flex justify-center items-center mt-5">
+                <hr class=" border w-[70%] border-[#364153]">
+
+            </div>
+
+
+            <h1 class="text-center text-white font-semibold mt-3 mb-5">© 2024 Hilal Hotels Chain. All rights reserved.
+            </h1>
+
+        </div>
+        <!-- copyright-->
+    </footer>
+
+    <!-- end:footer -->
+
+
+
+
+
+</body>
+
+</html>
