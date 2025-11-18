@@ -30,7 +30,7 @@
 
         <nav class="ml-10 justify-center items-center hidden md:flex  w-[60%] ">
             <div class="flex justify-around w-full">
-                <h2 class="text-[#D4AF37] hover:cursor-pointer text-2xl font-sans font-bold"><a
+                <h2 class="hover:text-[#D4AF37]  hover:cursor-pointer text-2xl font-sans font-bold"><a
                         href="index.html">Home</a></h2>
                 <h2 class="hover:text-[#D4AF37] hover:cursor-pointer text-2xl font-sans font-bold"><a
                         href="Branches.html">Branch</a></h2>
@@ -114,6 +114,56 @@
 
                     <!--content-->
                     <div>
+
+                        <!--input-->
+                        <div class="flex flex-col space-y-2">
+                            <label class="text-[#2B2B2B] text-xl flex mt-6">
+                                <svg class="mr-1" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    viewBox="0 0 24 24" fill="none" stroke="#D4AF37" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round"
+                                    class="lucide lucide-circle-user-round-icon lucide-circle-user-round">
+                                    <path d="M18 20a6 6 0 0 0-12 0" />
+                                    <circle cx="12" cy="10" r="4" />
+                                    <circle cx="12" cy="12" r="10" />
+                                </svg>
+
+                                Full name
+                            </label>
+                            <input id="Name" type="text"
+                                class="border border-[#E5E5E5] w-[80%] p-2 rounded-xl focus:outline-[#E5E5E5] "
+                                placeholder="Enter your full name">
+
+                            <label class="text-[#2B2B2B] text-xl flex">
+                                <svg class="mr-1" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    viewBox="0 0 24 24" fill="none" stroke="#D4AF37" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round"
+                                    class="lucide lucide-mail-icon lucide-mail">
+                                    <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7" />
+                                    <rect x="2" y="4" width="20" height="16" rx="2" />
+                                </svg>
+                                Email
+                            </label>
+                            <input type="email" id="Email"
+                                class="border border-[#E5E5E5] w-[80%] p-2 rounded-xl focus:outline-[#E5E5E5] "
+                                placeholder="your@gmail.com">
+
+
+                            <label class="text-[#2B2B2B] text-xl flex">
+                                <svg class="mr-1" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    viewBox="0 0 24 24" fill="none" stroke="#D4AF37" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round"
+                                    class="lucide lucide-phone-icon lucide-phone">
+                                    <path
+                                        d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384" />
+                                </svg>
+                                Phone number</label>
+                            <input id="Phone" type="text"
+                                class="border border-[#E5E5E5] w-[80%] p-2 rounded-xl focus:outline-[#E5E5E5] "
+                                placeholder="+966 5XXXXXXXX">
+                        </div>
+                        <!--end: input-->
+
+
                         <label class="flex text-xl  mt-4 justify-start  items-center">
                             <svg class="mr-1" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                 viewBox="0 0 24 24" fill="none" stroke="#D4AF37" stroke-width="2" stroke-linecap="round"
@@ -259,13 +309,41 @@
                 <form>
                     <!--header-->
                     <div>
-                        <h1 class="text-3xl font-semibold text-[#0A2A66]">Booking Summary</h1>
+                        <h1 class="text-3xl font-semibold text-[#0A2A66] mt-6">Booking Summary</h1>
 
                     </div>
                     <!--end:header-->
 
                     <!--content-->
                     <div>
+
+                        <h3 class="flex  text-ls  mt-4 justify-start  items-center text-[#737373]">Full name</h3>
+                        <h4 class="flex  text-base  mt-1 justify-start  items-center" id="name-input">Not specified</h4>
+
+                        <div class="flex justify-center items-center">
+                            <hr class="border border-[#E5E5E5] w-[85%] mt-2 mb-2">
+
+                        </div>
+
+                        <h3 class="flex  text-ls  mt-4 justify-start  items-center text-[#737373]">Email</h3>
+                        <h4 class="flex  text-base  mt-1 justify-start  items-center" id="email-input">Not specified
+                        </h4>
+
+                        <div class="flex justify-center items-center">
+                            <hr class="border border-[#E5E5E5] w-[85%] mt-2 mb-2">
+
+                        </div>
+
+                        <h3 class="flex  text-ls  mt-4 justify-start  items-center text-[#737373]">Phone number</h3>
+                        <h4 class="flex  text-base  mt-1 justify-start  items-center" id="phone-input">Not specified
+                        </h4>
+
+                        <div class="flex justify-center items-center">
+                            <hr class="border border-[#E5E5E5] w-[85%] mt-2 mb-2">
+
+                        </div>
+
+
                         <h3 class="flex  text-ls  mt-4 justify-start  items-center text-[#737373]">City</h3>
                         <h4 class="flex  text-base  mt-1 justify-start  items-center" id="City-input">Not specified</h4>
 
@@ -328,22 +406,24 @@
                 <h1 class="text-[#0A2A66] text-4xl ">
                     Booking policies
                 </h1>
-                    <!--content-->
+                <!--content-->
                 <div class="bg-[#FFFFFF] p-7 flex flex-col rounded-lg mt-4 mb-4 space-y-2">
-                     <h3 class="text-[#2B2B2B] text-xl">Cancellation Policy</h3>
-                     <h5 class="text-[#737373]">Cancellation is free up to 48 hours before arrival. After that, the cost of one night will be charged.</h5>
+                    <h3 class="text-[#2B2B2B] text-xl">Cancellation Policy</h3>
+                    <h5 class="text-[#737373]">Cancellation is free up to 48 hours before arrival. After that, the cost
+                        of one night will be charged.</h5>
 
-                                  <h3 class="text-[#2B2B2B] text-xl">Check-in and check-out times</h3>
-                     <h5 class="text-[#737373]">Check-in: From 3:00 PM | Check-out: Until 12:00 PM</h5>
+                    <h3 class="text-[#2B2B2B] text-xl">Check-in and check-out times</h3>
+                    <h5 class="text-[#737373]">Check-in: From 3:00 PM | Check-out: Until 12:00 PM</h5>
 
 
-                                  <h3 class="text-[#2B2B2B] text-xl"> Payment methods</h3>
-                     <h5 class="text-[#737373]">We accept all major credit cards (Visa, Mastercard, Mada) and cash on arrival.</h5>
+                    <h3 class="text-[#2B2B2B] text-xl"> Payment methods</h3>
+                    <h5 class="text-[#737373]">We accept all major credit cards (Visa, Mastercard, Mada) and cash on
+                        arrival.</h5>
                 </div>
                 <!--content-->
 
 
-                
+
             </div>
             <!--end:container-->
 

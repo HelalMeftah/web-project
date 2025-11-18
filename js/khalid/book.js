@@ -1,3 +1,11 @@
+let Name=document.querySelector("#Name")
+let name_input=document.querySelector("#name-input")
+let Email=document.querySelector("#Email")
+let email_input=document.querySelector("#email-input")
+let Phone=document.querySelector("#Phone")
+let phone_input=document.querySelector("#phone-input")
+
+
 let Arrival_date=document.querySelector("#Arrival-date");
 let City =document.querySelector("#City")
 let City_input=document.querySelector("#City-input")
@@ -28,6 +36,9 @@ Departure_date.setAttribute("min",time_zone)
 
 // for database
 let user ={
+    name:"",
+    email:"",
+    phone:"",
     City:"",
     Room:"",
     ArrivalDates:"",
@@ -38,6 +49,48 @@ let user ={
     }
 }
 
+
+Name.addEventListener("input",(e)=>{
+    if(e.target.value===""){
+name_input.textContent="Not specified"
+    }else{
+    name_input.textContent=e.target.value
+    user.name=e.target.value
+
+
+    }
+
+    
+})
+
+
+Email.addEventListener("input",(e)=>{
+    if(e.target.value===""){
+email_input.textContent="Not specified"
+    }else{
+    email_input.textContent=e.target.value
+    user.email=e.target.value
+
+
+    }
+
+    
+})
+
+
+
+Phone.addEventListener("input",(e)=>{
+    if(e.target.value===""){
+phone_input.textContent="Not specified"
+    }else{
+    phone_input.textContent=e.target.value
+    user.phone=e.target.value
+
+
+    }
+
+    
+})
 
 City.addEventListener("input",(e)=>{
 if(e.target.value==="Choose a city"){
