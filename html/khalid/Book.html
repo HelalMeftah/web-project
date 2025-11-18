@@ -98,101 +98,258 @@
 
 
     <!--details section-->
-    <section class="bg-[#FFFFFF]">
+    <section class="bg-[#FFFFFF]  h-200">
 
         <!--container-->
-        <div class=" flex justify-center items-center space-x-3">
+        <div class=" flex justify-center items-center space-x-3 mt-7">
 
-            <div class=" w-[40%] shadow-lg mt-5 mb-5">
-                <form class="p-4 ">
-                <!--header-->
-                <div>
-                    <h1 class="text-3xl font-semibold text-[#0A2A66]">Booking details</h1>
+            <div class=" w-[40%] shadow-xl mt-5 mb-5  rounded-xl">
+                <form class="p-4  rounded-xl ">
+                    <!--header-->
+                    <div>
+                        <h1 class="text-3xl font-semibold text-[#0A2A66]">Booking details</h1>
 
-                </div>
-                 <!--end:header-->
+                    </div>
+                    <!--end:header-->
 
-                  <!--content-->
-                 <div>
-                    <label class="flex text-xl  mt-4 justify-start  items-center" >
-                        <svg class="mr-1"  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#D4AF37" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin-icon lucide-map-pin"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>
-                        City
-                    </label>
+                    <!--content-->
+                    <div>
+                        <label class="flex text-xl  mt-4 justify-start  items-center">
+                            <svg class="mr-1" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24" fill="none" stroke="#D4AF37" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-map-pin-icon lucide-map-pin">
+                                <path
+                                    d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" />
+                                <circle cx="12" cy="10" r="3" />
+                            </svg>
+                            City
+                        </label>
 
-                    <select class="border border-[#E5E5E5] rounded-lg p-2 w-[80%] mt-2 bg-white p-2 rounded-xl ml-2  border border-[#E5E5E5]">
-                        <option>Choose a city</option>
-                        <option>Makkah</option>
-                        <option>Madinah</option>
-                        <option>Jeddah</option>
-                        <option>Riyadh</option>
-                    </select>
-
-
-                    <label class="flex text-xl mt-4 justify-start  items-center">
-                        <svg class="mr-1" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#D4AF37" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-house-icon lucide-house"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"/><path d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
-                        Room type
-                    </label>
-
-                    <select class="border border-[#E5E5E5] rounded-lg p-2 w-[80%] mt-2 bg-white p-2 rounded-xl ml-2  border border-[#E5E5E5]">
-                        <option>Choose a city</option>
-                        <option>Standard Room  - 200 SAR / night</option>
-                        <option>Deluxe Room  - 400 SAR / night</option>
-                        <option>Royal Suite  - 1200 SAR / night</option>
-                        
-                    </select>
+                        <select id="City"
+                            class="border border-[#E5E5E5] rounded-lg p-2 w-[80%] mt-2 bg-white p-2 rounded-xl ml-2  border border-[#E5E5E5]">
+                            <option>Choose a city</option>
+                            <option>Makkah</option>
+                            <option>Madinah</option>
+                            <option>Jeddah</option>
+                            <option>Riyadh</option>
+                        </select>
 
 
-                    <!--date-->
-                    <div class="mt-5">
-                        <div>
-                            <h3 class="flex  text-xl  mt-4 justify-start  items-center">
-                                <svg class="mr-1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#D4AF37" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-calendar-icon lucide-calendar"><path d="M8 2v4"/><path d="M16 2v4"/><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M3 10h18"/></svg>
-                                Arrival date
-                            </h3>
+                        <label class="flex text-xl mt-4 justify-start  items-center">
+                            <svg class="mr-1" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                viewBox="0 0 24 24" fill="none" stroke="#D4AF37" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-house-icon lucide-house">
+                                <path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8" />
+                                <path
+                                    d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+                            </svg>
+                            Room type
+                        </label>
 
-                            <input type="date" class="border border-[#E5E5E5] rounded-lg p-2 w-[50%] mt-2 bg-white p-2 rounded-xl ml-2  border border-[#E5E5E5]" id="Arrival date">
+                        <select id="room-type"
+                            class="border border-[#E5E5E5] rounded-lg p-2 w-[80%] mt-2 bg-white p-2 rounded-xl ml-2  border border-[#E5E5E5]">
+                            <option>Choose room type</option>
+                            <option>Standard Room - 200 SAR / night</option>
+                            <option>Deluxe Room - 400 SAR / night</option>
+                            <option>Royal Suite - 1200 SAR / night</option>
 
+                        </select>
+
+
+                        <!--date-->
+                        <div class="mt-5 flex ">
+                            <div class="w-[50%]">
+                                <h3 class="flex  text-xl  mt-4 justify-start  items-center">
+                                    <svg class="mr-1" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        viewBox="0 0 24 24" fill="none" stroke="#D4AF37" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round"
+                                        class="lucide lucide-calendar-icon lucide-calendar">
+                                        <path d="M8 2v4" />
+                                        <path d="M16 2v4" />
+                                        <rect width="18" height="18" x="3" y="4" rx="2" />
+                                        <path d="M3 10h18" />
+                                    </svg>
+                                    Arrival date
+                                </h3>
+
+                                <input type="date"
+                                    class="border border-[#E5E5E5] rounded-lg p-2 w-[80%] mt-2 bg-white p-2 rounded-xl ml-2  border border-[#E5E5E5]"
+                                    id="Arrival-date">
+
+                            </div>
+
+                            <div class="w-[50%]">
+                                <h3 class="flex  text-xl  mt-4 justify-start  items-center">
+                                    <svg class="mr-1" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        viewBox="0 0 24 24" fill="none" stroke="#D4AF37" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round"
+                                        class="lucide lucide-calendar-icon lucide-calendar">
+                                        <path d="M8 2v4" />
+                                        <path d="M16 2v4" />
+                                        <rect width="18" height="18" x="3" y="4" rx="2" />
+                                        <path d="M3 10h18" />
+                                    </svg>
+                                    Departure date
+                                </h3>
+
+                                <input type="date"
+                                    class="border border-[#E5E5E5] rounded-lg p-2 w-[80%] mt-2 bg-white p-2 rounded-xl ml-2  border border-[#E5E5E5]"
+                                    id="Departure-date">
+
+                            </div>
                         </div>
 
-                        <div>
-                            
+                        <!--end:date-->
+
+
+
+                        <!--PEOPLE-->
+                        <div class="mt-5 flex ">
+                            <div class="w-[50%]">
+                                <h3 class="flex  text-xl  mt-4 justify-start  items-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="#D4AF37" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="lucide lucide-users-icon lucide-users">
+                                        <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+                                        <path d="M16 3.128a4 4 0 0 1 0 7.744" />
+                                        <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
+                                        <circle cx="9" cy="7" r="4" />
+                                    </svg>
+                                    Number of adults
+                                </h3>
+
+                                <input value="1" min="1" type="number"
+                                    class="border border-[#E5E5E5] rounded-lg p-2 w-[80%] mt-2 bg-white p-2 rounded-xl ml-2  border border-[#E5E5E5]"
+                                    id="adults">
+
+                            </div>
+
+                            <div class="w-[50%]">
+                                <h3 class="flex  text-xl  mt-4 justify-start  items-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="#D4AF37" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="lucide lucide-users-icon lucide-users">
+                                        <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+                                        <path d="M16 3.128a4 4 0 0 1 0 7.744" />
+                                        <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
+                                        <circle cx="9" cy="7" r="4" />
+                                    </svg>
+
+                                    Number of children
+                                </h3>
+
+                                <input value="0" min="0" type="number"
+                                    class="border border-[#E5E5E5] rounded-lg p-2 w-[80%] mt-2 bg-white p-2 rounded-xl ml-2  border border-[#E5E5E5]"
+                                    id="children">
+
+                            </div>
                         </div>
+
+                        <!--end:PEOPLE-->
+
                     </div>
 
-                    <!--end:date-->
-                    
-                 </div>
-
-                  <!--end:content-->
-                  </form>
+                    <!--end:content-->
+                </form>
             </div>
-            
 
 
-            <div class=" w-[30%]  shadow-lg mt-5 mb-5">
+
+            <div class=" w-[20%]  shadow-lg mt-5 mb-5 rounded-xl p-2 sticky top-15 ">
                 <form>
-                <!--header-->
-                <div>
-                    <h1 class="text-3xl font-semibold text-[#0A2A66]">Booking Summary</h1>
+                    <!--header-->
+                    <div>
+                        <h1 class="text-3xl font-semibold text-[#0A2A66]">Booking Summary</h1>
 
-                </div>
-                 <!--end:header-->
+                    </div>
+                    <!--end:header-->
 
-                 <!--content-->
-                 <div>
-                    
-                 </div>
+                    <!--content-->
+                    <div>
+                        <h3 class="flex  text-ls  mt-4 justify-start  items-center text-[#737373]">City</h3>
+                        <h4 class="flex  text-base  mt-1 justify-start  items-center" id="City-input">Not specified</h4>
 
-                  <!--end:content-->
-                  </form>
+                        <div class="flex justify-center items-center">
+                            <hr class="border border-[#E5E5E5] w-[85%] mt-2 mb-2">
+
+                        </div>
+
+
+                        <h3 class="flex  text-ls  mt-4 justify-start  items-center text-[#737373]">Room type</h3>
+                        <h4 class="flex  text-base  mt-1 justify-start  items-center" id="room-input">Not specified</h4>
+
+                        <div class="flex justify-center items-center">
+                            <hr class="border border-[#E5E5E5] w-[85%] mt-2 mb-2">
+
+                        </div>
+
+
+
+                        <h3 class="flex  text-ls  mt-4 justify-start  items-center text-[#737373]">Dates</h3>
+                        <h4 class="flex  text-base  mt-1 justify-start  items-center" id="Arrival-input">Not specified
+                        </h4>
+
+                        <div class="flex justify-center items-center">
+                            <hr class="border border-[#E5E5E5] w-[85%] mt-2 mb-2">
+
+                        </div>
+
+
+
+                        <h3 class="flex  text-ls  mt-4 justify-start  items-center text-[#737373]">Number of guests</h3>
+                        <h4 class="flex  text-base  mt-1 justify-start  items-center" id="guests-input">1 Adults </h4>
+
+                        <div class="flex justify-center items-center">
+                            <hr class="border border-[#E5E5E5] w-[85%] mt-2 mb-2">
+
+                        </div>
+
+                    </div>
+
+                    <!--end:content-->
+                </form>
             </div>
-            
+
 
         </div>
         <!--end:container-->
 
     </section>
     <!--end:details section -->
+
+
+    <!--policy-->
+    <section class="bg-[#F5F5F5]">
+        <div class="flex flex-col justify-center items-center">
+            <!--container-->
+            <div class=" w-[60%] flex flex-col p-4 m-4 mt-10 rounded-xl">
+
+
+                <h1 class="text-[#0A2A66] text-4xl ">
+                    Booking policies
+                </h1>
+                    <!--content-->
+                <div class="bg-[#FFFFFF] p-7 flex flex-col rounded-lg mt-4 mb-4 space-y-2">
+                     <h3 class="text-[#2B2B2B] text-xl">Cancellation Policy</h3>
+                     <h5 class="text-[#737373]">Cancellation is free up to 48 hours before arrival. After that, the cost of one night will be charged.</h5>
+
+                                  <h3 class="text-[#2B2B2B] text-xl">Check-in and check-out times</h3>
+                     <h5 class="text-[#737373]">Check-in: From 3:00 PM | Check-out: Until 12:00 PM</h5>
+
+
+                                  <h3 class="text-[#2B2B2B] text-xl"> Payment methods</h3>
+                     <h5 class="text-[#737373]">We accept all major credit cards (Visa, Mastercard, Mada) and cash on arrival.</h5>
+                </div>
+                <!--content-->
+
+
+                
+            </div>
+            <!--end:container-->
+
+        </div>
+    </section>
+    <!--end:policy-->
 
     <!--end:hero section-->
 
@@ -308,7 +465,7 @@
 
 
 
-
+    <script src="../../js/khalid/book.js"></script>
 </body>
 
 </html>
