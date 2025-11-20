@@ -17,18 +17,19 @@ let Contact={
     
 }
 
-function sand(){
-    fetch("content.php",{
-        method:"POST",
-        headers:{"Content-Type":"application/json"},
-        body:JSON.stringify(Contact)
-    }).then(res=>res.json()
-).then(data=>{
-        console.log(data)
-    }).catch(err=>{
-        console.log(err)
-    })
+function sand() {
+    //backend/khalid/content.php
+    console.log(Contact)
+ fetch("http://localhost/web-project/backend/khalid/content.php", {
+    method: "POST",
+    headers: {"Content-Type": "application/json"},
+    body: JSON.stringify(Contact)
+})
+.then(res => res.json()) 
+.then(txt => console.log(txt))
+
 }
+
 
 function change(){
  if(Contact.name!==""&&Contact.email!==""&&Contact.message!==""){

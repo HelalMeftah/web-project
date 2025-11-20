@@ -60,7 +60,7 @@ name_input.textContent="Not specified"
 
     }
 
-    
+    console.log(user)
 })
 
 
