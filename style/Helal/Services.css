@@ -1,4 +1,5 @@
 
+
 .flex {
        display: flex;
        justify-content: space-around;
@@ -73,4 +74,107 @@
 }
 
 
+  /* <!-- .......................................First Nav....up........................ --> */
+.blockService{
+    background-color: #0A2A66;
+    color: white;
+    width: 100%;
+    height: 200px;
+    margin-top: 100px;
+    padding: 50px;
+    text-align: center;
+    font-weight: bold;
+}
+.F4S{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    margin-left: 20px;
+}
+.F4S div{
+   width: calc(94%/4);
+    box-shadow: 0 5px 10px rgb(0, 0, 0,0.15);
+  padding: 15px;
+  margin-left: 20px;
 
+}
+.imF4S{
+    width: 50px;
+    height: 50px;
+    margin-left: 7px;
+    margin-top: 5px;
+}
+.f4sb{
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    background-color:#F7F7F7;
+}
+/* ......................Additional Services........................ */
+.AddSer{
+    justify-content: space-around;
+    width: 100%;
+    height: 200px;
+    display: flex;
+}
+.AddSer section{
+     width: calc(80%/2);
+     border: 1px solid rgb(75, 75, 65);
+     border-radius: 16px;
+     text-align: left;
+     margin-left: 100px;
+     padding: 30px;
+}
+/* <!-- ..................Experience Our Distinguished Services........... --> */
+
+.Experience{
+    background-color: #0A2A66;
+    color: white;
+    text-align: center;
+    width: 100%;
+    height: 200px;
+    padding: 50px;
+    margin-top: 50px;
+}
+.Distinguished{
+    background-color: #D4AF37;
+    color: #0A2A66;
+    height: 50px;
+    width: 120px;
+    border-radius: 8px;
+}
+
+/* ....................footer................ */
+.nav7{
+        background-color:#0A2A66;
+            width: 100%;
+                height: 320px;
+
+
+
+
+}
+.div11{
+    text-align: center;
+    display: flex;
+    top: 0px;
+    justify-content: space-around;
+
+
+}
+.div11 div{
+    width: calc(90%/4);
+}
+table{
+    text-align: left;
+    margin-top: 30px;
+    color: white;
+}
+.footer_top{
+    color: #D4AF37;
+}
+.size4{
+    width: 16px;
+    height: 16px;
+    margin-top: 15px;
+}
