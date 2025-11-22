@@ -132,6 +132,53 @@ while($row=mysqli_fetch_assoc($res13)){
 };
 
 
+$q14 = 'select count(user_Room) as Standard_Room  from booking where user_Room ="Standard Room - 200 SAR / night";';
+$res14= mysqli_query($conn, $q14);
+$Standard_Room = mysqli_fetch_assoc($res14);
+
+
+
+$q15 = 'select price as Standard_profit  from booking where user_Room ="Standard Room - 200 SAR / night";';
+$res15 = mysqli_query($conn, $q15);
+$Standard_profit= [];
+
+while($row=mysqli_fetch_assoc($res15)){
+    // i need to change to int
+        $Standard_profit []=intval($row["Standard_profit"]) ;
+};
+
+$q16= 'select count(user_Room) as Royal_Suite  from booking where user_Room ="Royal Suite - 1200 SAR / night";';
+$res16= mysqli_query($conn, $q16);
+$Royal_Suite = mysqli_fetch_assoc($res16);
+
+
+
+
+$q17 = 'select price as Royal_profit  from booking where user_Room ="Royal Suite - 1200 SAR / night";';
+$res17 = mysqli_query($conn, $q17);
+$Royal_profit= [];
+
+while($row=mysqli_fetch_assoc($res17)){
+    // i need to change to int
+        $Royal_profit []=intval($row["Royal_profit"]) ;
+};
+
+
+
+$q18= 'select count(user_Room) as Deluxe_Room   from booking where user_Room ="Deluxe Room - 400 SAR / night";';
+$res18= mysqli_query($conn, $q18);
+$Deluxe_Room = mysqli_fetch_assoc($res18);
+
+
+$q19 = 'select price as Deluxe_profit  from booking where user_Room ="Deluxe Room - 400 SAR / night";';
+$res19 = mysqli_query($conn, $q19);
+$Deluxe_profit= [];
+
+while($row=mysqli_fetch_assoc($res19)){
+    // i need to change to int
+        $Deluxe_profit []=intval($row["Deluxe_profit"]) ;
+};
+
 
 
 
@@ -159,5 +206,11 @@ echo json_encode([
     $Riyadh_customer,
     $Riyadh_profit,
     $booking_details,
-    $content_detail 
+    $content_detail ,
+    $Standard_Room,
+    $Standard_profit,
+    $Royal_Suite,
+    $Royal_profit,
+    $Deluxe_Room ,
+    $Deluxe_profit 
 ]);

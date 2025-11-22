@@ -7,6 +7,9 @@ let Madinah_Branch=document.querySelector("#Madinah-Branch")
 let Makkah_Branch=document.querySelector("#Makkah-Branch")
 let Jeddah_Branch=document.querySelector("#Jeddah-Branch")
 let Riyadh_Branch=document.querySelector("#Riyadh-Branch")
+let Standard_Room=document.querySelector("#Standard_Room")
+let Royal_room=document.querySelector("#Royal_room")
+let Deluxe_Room=document.querySelector("#Deluxe-Room")
 
 
 
@@ -37,8 +40,14 @@ function getdata() {
         card_three_branch(db[9],db[9].length)
         Riyadh_Branch.textContent=db[10].Riyadh_customer
         card_four_branch(db[11],db[11].length)
-        branch_cards(db[12])
+        Booking_cards(db[12])
         content_cards(db[13])
+        Standard_Room.textContent=`Guests ${db[14].Standard_Room}`
+        Standard_card(db[15],db[15].length)
+        Royal_room.textContent=`Guests ${db[16].Royal_Suite}`
+        Royal_card(db[17],db[17].length)
+        Deluxe_Room.textContent=`Guests ${db[18].Deluxe_Room}`
+        Deluxe_card(db[19],db[19].length)
 
 
 
@@ -46,6 +55,10 @@ function getdata() {
 }
 
 getdata()
+
+
+
+
 
 
 // content card
@@ -99,7 +112,7 @@ function content_cards(d){
 
 
 //branch card
-function branch_cards(db){
+function Booking_cards(db){
     let Booking_cards_container=document.querySelector("#Booking-cards-container")
     
     Booking_cards_container.innerHTML=""
@@ -193,7 +206,6 @@ data_btn.forEach((e) => {
 })
 
 
-
 //first data 
 function Customers(d,i) {
 
@@ -211,6 +223,69 @@ function Customers(d,i) {
     Charts(ElementID, colorStep1, colorStep2, borderColor, lenght, data, y = false)
 
 }
+
+
+// Deluxe card
+
+function Deluxe_card(d,i){
+
+        let ElementID = "Deluxe-card"
+
+    let colorStep1 = "rgba(16, 185, 129, 0.35)";
+    let colorStep2 = "rgba(6, 95, 70, 0)";
+    let borderColor = "rgba(16, 185, 129, 1)";
+    //i will use database to change here
+    let lenght =i;
+    let data = d
+    //end
+    let y = false
+
+    Charts(ElementID, colorStep1, colorStep2, borderColor, lenght, data, y = false)
+
+}
+
+// Royal card
+
+function Royal_card(d,i){
+
+    let ElementID = "Royal-card"
+
+    let colorStep1 = "rgba(155, 89, 182, 0.45)";
+    let colorStep2 = "rgba(155, 89, 182, 0)";
+    let borderColor = "#9b59b6";
+    //i will use database to change here
+    let lenght = i;
+    let data =d
+    //end
+    let y = false
+
+    Charts(ElementID, colorStep1, colorStep2, borderColor, lenght, data, y = false)
+
+
+}
+
+
+//Standard card
+function Standard_card(d,i) {
+
+    let ElementID = "Standard-card"
+
+    let colorStep1 = "rgba(60, 100, 255, 0.35)";
+    let colorStep2 = "rgba(60, 100, 255, 0)";
+    let borderColor = "#3B5BFF";
+    //i will use database to change here
+    let lenght = i;
+    let data =d
+    //end
+    let y = false
+
+    Charts(ElementID, colorStep1, colorStep2, borderColor, lenght, data, y = false)
+
+}
+
+
+
+
 
 
 
