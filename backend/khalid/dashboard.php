@@ -100,6 +100,38 @@ while($row=mysqli_fetch_assoc($res11)){
 };
 
 
+$q12 = 'select user_name  ,user_email , user_ArrivalDates , user_Departure_date  ,user_Room room from booking ;';
+$res12 = mysqli_query($conn, $q12);
+$booking_details = [];
+
+while($row=mysqli_fetch_assoc($res12)){
+    // i need to change to int
+    $booking_details[]=[
+        "name"=>$row["user_name"],
+        "email"=>$row["user_email"],
+        "ArrivalDates"=>$row["user_ArrivalDates"],
+        "Departure_date"=>$row["user_Departure_date"],
+        "Room"=>$row["room"],
+    ] ;
+};
+
+
+
+$q13 = 'select * from content order by user_id desc;';
+$res13 = mysqli_query($conn, $q13);
+$content_detail = [];
+
+while($row=mysqli_fetch_assoc($res13)){
+    // i need to change to int
+    $content_detail []=[
+        "name"=>$row["user_name"],
+        "email"=>$row["user_email"],
+        "Message"=>$row["user_message"],
+       
+    ] ;
+};
+
+
 
 
 
@@ -125,5 +157,7 @@ echo json_encode([
     $Jeddah_customer,
     $Jeddah_profit ,
     $Riyadh_customer,
-    $Riyadh_profit
+    $Riyadh_profit,
+    $booking_details,
+    $content_detail 
 ]);

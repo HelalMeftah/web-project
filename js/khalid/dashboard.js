@@ -7,7 +7,7 @@ let Madinah_Branch=document.querySelector("#Madinah-Branch")
 let Makkah_Branch=document.querySelector("#Makkah-Branch")
 let Jeddah_Branch=document.querySelector("#Jeddah-Branch")
 let Riyadh_Branch=document.querySelector("#Riyadh-Branch")
-console.log(data_btn)
+
 
 
 let datas = {
@@ -15,6 +15,8 @@ let datas = {
     data_type: ""
 
 }
+
+
 
 
 
@@ -35,7 +37,8 @@ function getdata() {
         card_three_branch(db[9],db[9].length)
         Riyadh_Branch.textContent=db[10].Riyadh_customer
         card_four_branch(db[11],db[11].length)
-
+        branch_cards(db[12])
+        content_cards(db[13])
 
 
 
@@ -43,6 +46,105 @@ function getdata() {
 }
 
 getdata()
+
+
+// content card
+
+
+function content_cards(d){
+   let content_cards_contanier=document.querySelector("#content-cards-contanier")
+   content_cards_contanier.innerHTML=""
+
+   d.forEach((e)=>{
+    content_cards_contanier.innerHTML +=`
+    
+           <!--card-->
+          <div class=" w-90  rounded-xl h-60 hover:cursor-pointer  bg-white flex-shrink-0 shadow-md">
+              <!--head-->
+              <div class="p-2 flex mt-4">
+                <div class="bg-[#FFFFFF] border border-[#EBECF0] p-2 w-fit rounded-full h-fit">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#5DBDC9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail-icon lucide-mail"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"/><rect x="2" y="4" width="20" height="16" rx="2"/></svg>
+                </div>
+
+                <div class="flex flex-col p-2 justify-center items-start">
+                  <h1 class="text-xl font-semibold">${e.name}</h1>
+                  <h1 class="text-sm font-semibold bg-[#EFF8FF] text-[#5CBECA] p-2 rounded-full">${e.email}</h1>
+                </div>
+
+              </div>
+              <!--end:head-->
+
+              <!--content-->
+              <div class=" h-37 rounded-xl  p-2">
+                <div class="flex justify-between items-center  h-10 " >
+                  <h2 class="text-lg font-semibold text-black">Message</h2>
+                </div>
+
+                 <div class="p-1 rounded-xl  max-h-24 overflow-y-auto [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden" >
+                  <h2 class="text-base font-semibold">${e.Message}</h2>
+                
+                </div>
+              </div>
+              <!--end:content-->
+
+
+          </div>
+          <!--end:card-->
+
+    `
+   })
+   
+
+}
+
+
+//branch card
+function branch_cards(db){
+    let Booking_cards_container=document.querySelector("#Booking-cards-container")
+    
+    Booking_cards_container.innerHTML=""
+
+    db.forEach((e)=>{
+        Booking_cards_container.innerHTML +=`
+        <!--card-->
+          <div class=" w-90  rounded-xl h-50 hover:cursor-pointer  bg-white flex-shrink-0 shadow-md"">
+              <!--head-->
+              <div class="p-2 flex">
+                <div class="bg-[#DFDCFF] p-2 w-fit rounded-full h-fit">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#7464FC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-contact-round-icon lucide-contact-round"><path d="M16 2v2"/><path d="M17.915 22a6 6 0 0 0-12 0"/><path d="M8 2v2"/><circle cx="12" cy="12" r="4"/><rect x="3" y="4" width="18" height="18" rx="2"/></svg>
+                </div>
+
+                <div class="flex flex-col p-2 justify-center items-start">
+                  <h1 class="text-xl font-semibold">${e.name}</h1>
+                  <h1 class="text-sm font-semibold bg-[#DFDCFF] text-[#7464FC] p-2 rounded-full">${e.email}</h1>
+                </div>
+
+              </div>
+              <!--end:head-->
+
+              <!--content-->
+              <div class=" h-37 rounded-xl  p-2">
+                <div class="flex justify-between items-center  h-10" >
+                  <h2 class="text-lg font-semibold">Date :</h2>
+                  <h3 class="text-[#ABB1BF] text-xm">${e.ArrivalDates}</h3>
+                </div>
+
+                 <div class="flex justify-between items-center  h-10" >
+                  <h2 class="text-lg font-semibold">Room :</h2>
+                  <h3 class="text-[#ABB1BF] text-sm">${e.Room}</h3>
+                </div>
+              </div>
+              <!--end:content-->
+
+
+          </div>
+          <!--end:card-->
+        
+        
+        `
+    })
+
+}
 
 
 
