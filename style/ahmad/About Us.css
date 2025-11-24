@@ -1,76 +1,300 @@
+body {
+margin: 0;
 
-.flex {
-       display: flex;
-       justify-content: space-around;
-       z-index: 10000;
-      font-family: "Poppins", sans-serif;
-      font-weight: 400;
-      font-style: normal;
-      position: fixed;
-      width: 100%;
-      background-color: white;
-    top: 0;    
-
+    font-family: 'Poppins';
+margin-top: 100px;
 }
- .div2{
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 60px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e1e4ea;
+  z-index: 1000;
+  font-size: 16px; 
+}
+
+
+.navbar-left {
     display: flex;
-    background-color: white;
-    margin-top: 2px;
- }
- .im{
-    height: 80px;
-    width: 80px;
-    margin-top: -5px;
-    margin-left: 10px;
-    transform:rotate(0deg) ;
-    -webkit-transform:rotate(0deg) ;
-    -moz-transform:rotate(0deg) ;
-    -ms-transform:rotate(0deg) ;
-    -o-transform:rotate(0deg) ;
+    align-items: center;
+    gap: 12px;
 }
- .image{
-    text-align: center;
-    width: 60px;
-    height: 60px;
-    margin-top: 10px;
+
+.logo-background {
+    padding-bottom: 30px;
+    padding-left: 10px;
+    width: 40px;
+    height: 20px;
     background-color: #0A2A66;
+    border-radius: 100%;
+}
+
+.logo-img {
+
     border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
+    display: flex;
+    align-items: center;
+    width: 80px;
 }
-.logo{
-    margin-top: 2px;
-}
-.A{
-    margin-top: -1px;
+
+.logo-text {
+    font-weight: 900;
+    font-size: 20px;
+    color: #0A2A66;
 }
 
 
-.flex div {
-    width:calc(90%10);
-    font-family:mont;
+.navbar-links {
+    display: flex;
+    align-items: center;
+    gap: 32px;
 }
-.booking{
-    background-color:#0A2A66;
-    border-radius: 16px;
-    -webkit-border-radius: 16px;
-    -moz-border-radius: 16px;
-    -ms-border-radius: 16px;
-    -o-border-radius: 16px;
-    height: 70px;
-    padding: 2px;
-    color: white;
-    margin-top: 5px;
+
+.nav-link {
+    text-decoration: none;
+    font-size: 17px;
+    color: #333A4D;
+    font-weight: 400;
+    transition: 0.2s;
 }
-.hove:hover{
+
+.nav-link:hover {
+    color: #0A2A66;
+}
+
+.nav-link.active {
     color: #D4AF37;
-}
-.hove{
-    font-weight: 200;
-    font-size: 10pt;
+    font-weight: 500;
 }
 
 
+.butten-book {
+  background-color: #0A2A66;
+  color: #ffffff;
+  border: none;
+  padding: 17px 28px;
+  border-radius: 12px;
+  font-size: 14px;
+  cursor: pointer;
+}
+.butten-book:hover {
+  opacity: 0.9;
+}
 
+/* نهاية الناف */
+
+.about-hilal-container {
+    position: relative;
+    width: 1700px;
+    height: 300px;
+    overflow: hidden;
+}
+
+.about-hilal-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    filter: brightness(40%); 
+}
+.main text{
+    font-size: 50x;
+}
+.about-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+ /* بداية مهمة هلال */
+.mission-section {
+    background-color: #f4f4f4;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 32px;
+    font-weight: bold;
+    color: #0a2a63; 
+    margin-bottom: 40px;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+
+}
+
+.card {
+    background: white;
+    width: 260px;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+
+
+.card h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.card p {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.5;
+}
+/* نهاية مهمة هلال */
+.timeline {
+    width: 800px;
+    margin-left: 300px;
+    padding-top: 50px ;
+}
+
+.timeline-title {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 900;
+    color: #0a2a63;
+    margin-bottom: 40px;
+}
+
+.timeline-item {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin: 25px 0;
+}
+
+.year {
+    font-size: 20px;
+    font-weight: 700;
+    color: #c79b2e;
+    width: 80px; 
+    text-align: right;
+}
+
+.timte-line-event{
+    flex: 1;
+    background: white;
+    padding: 20px 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    font-size: 16px;
+    color: #333;
+    border-left: 4px solid #c79b2e;  
+}
+/* نهاية الايفينت */
+.time-line-end {
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  width: 100vw;               
+  background-color: #0a2a63;  
+  padding: 40px 20px;
+  color: #c79b2e;
+}
+
+
+.time-line-end .container {
+  max-width: 1200px;   
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  align-items: center;
+
+}
+
+
+.stat {
+  text-align: center;
+  min-width: 140px;
+}
+.stat h2 {
+  font-size: 32px;
+  margin: 0;
+  font-weight: bold;
+}
+.stat p {
+  margin: 6px ;
+  font-size: 14px;
+  font-weight: 100;
+  color: white;
+}
+
+
+
+.stat-end{
+
+width: 1800px;
+
+
+}
+
+
+
+
+
+.footer {
+  background: #0A2A66;
+  color: white;
+  padding: 60px 100px;
+  margin-top: 50px;
+    width: 100vw;          
+    margin-left: -300px;     
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1fr;
+  gap: 40px;
+}
+
+.footer-title {
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+
+.footer-text {
+  line-height: 1.7;
+}
+
+.footer-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+  line-height: 2;
+}
+
+.newsletter-btn {
+  background: #D6B23A;
+  padding: 8px 18px;
+  border: none;
+  border-radius: 6px;
+  margin-top: 10px;
+}
+
+.footer-line {
+  margin: 40px 0;
+  border-color: rgba(255,255,255,0.2);
+}
+
+.footer-bottom {
+  text-align: center;
+}
