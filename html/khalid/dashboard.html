@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+
+  <!-- <style>
+    body {
+      direction: rtl;
+      font-family: sans-serif;
+      background: #f8f9fc;
+      padding: 30px;
+    }
+
+    .chart-container {
+      width: 100%;
+      max-width: 1000px;
+      margin: auto;
+    }
+  </style> -->
+</head>
+
+<body class="bg-[#F5F5F5]">
+
+  <header class=" sticky w-full top-1 bottom-0 ">
+    <nav class="flex justify-center items-center space-x-9 m-2">
+      <h3
+        class="text-[#4857FC] hover:cursor-pointer  font-semibold text-xl flex justify-center items-center bg-[#F3F7FA]  p-3 rounded-full btn-nav shadow-md">
+        <svg class="mr-2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+          class="lucide lucide-house-icon lucide-house">
+          <path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8" />
+          <path
+            d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+        </svg>
+        <a href="#Branch">Branch</a>
+      </h3>
+      <h3
+        class="hover:text-[#4857FC] hover:cursor-pointer font-semibold text-xl text-black  flex justify-center items-center p-3 rounded-full btn-nav shadow-md">
+        <svg class="mr-2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+          class="lucide lucide-calendar-days-icon lucide-calendar-days">
+          <path d="M8 2v4" />
+          <path d="M16 2v4" />
+          <rect width="18" height="18" x="3" y="4" rx="2" />
+          <path d="M3 10h18" />
+          <path d="M8 14h.01" />
+          <path d="M12 14h.01" />
+          <path d="M16 14h.01" />
+          <path d="M8 18h.01" />
+          <path d="M12 18h.01" />
+          <path d="M16 18h.01" />
+        </svg>
+        <a href="#Booking">Booking</a>
+      </h3>
+      <h3
+        class="hover:text-[#4857FC] hover:cursor-pointer font-semibold text-xl text-black f flex justify-center items-center   p-3 rounded-full btn-nav shadow-md">
+        <svg class="mr-2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+          class="lucide lucide-contact-icon lucide-contact">
+          <path d="M16 2v2" />
+          <path d="M7 22v-2a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v2" />
+          <path d="M8 2v2" />
+          <circle cx="12" cy="11" r="3" />
+          <rect x="3" y="4" width="18" height="18" rx="2" />
+        </svg>
+        <a href="#content">Content</a>
+      </h3>
+      <h3
+        class="hover:text-[#4857FC] hover:cursor-pointer font-semibold text-xl text-black flex justify-center items-center  p-3 rounded-full btn-nav shadow-md">
+        <svg class="mr-2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+          class="lucide lucide-bed-double-icon lucide-bed-double">
+          <path d="M2 20v-8a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v8" />
+          <path d="M4 10V6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v4" />
+          <path d="M12 4v6" />
+          <path d="M2 18h20" />
+        </svg>
+        <a href="#Room">Room</a>
+      </h3>
+
+    </nav>
+  </header>
+
+
+
+  <!--for show data-->
+  <section class="  flex justify-center items-center mt-10 ">
+
+    <div class=" w-[75%]">
+      <!--head dashboard-->
+      <div>
+        <h2 class="text-[#010204] font-semibold text-3xl">Customers</h2>
+      </div>
+      <!--head dashboard-->
+
+      <!--container data-->
+      <div class="bg-white rounded-xl mt-2 ">
+
+        <div class="p-2">
+          <h1 class="text-[#B2B8C4] font-bold text-sm">Total customers</h1>
+          <div class="flex justify-start items-center  text-3xl shadow-2xl w-fit p-2 rounded-full">
+            <h3 class="text-[#020202]" id="Total-customers">100000</h3>
+            <svg id="triangle" class="ml-3" xmlns="http://www.w3.org/2000/svg" width="15" height="15"
+              viewBox="0 0 24 24" fill="#2ABF73" stroke="none" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round" class="lucide lucide-triangle-icon lucide-triangle">
+              <path d="M13.73 4a2 2 0 0 0-3.46 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z" />
+            </svg>
+            <span id="rate" class="text-base ml-0">3%</span>
+          </div>
+
+          <div class="mt-2 flex justify-start items-center">
+            <h3 class="bg-[#E0EFEA] w-fit p-2 rounded-full text-[#34C379]">Change <span id="change">10</span></h3>
+            <h3 class="text-[#ACB0BE] ml-1">increase <span id="increase">200</span></h3>
+          </div>
+
+
+
+        </div>
+
+
+
+
+        <div class="chart-container h-70 w-full mt-3  overflow-visible">
+          <canvas id="investChart" class=" w-full overflow-visible "></canvas>
+        </div>
+
+        <!--data change-->
+        <div class=" flex justify-center items-center mb-2 mt-2">
+          <div class="bg-[#F4F5F7] rounded-full p-2 flex space-x-6 mt-0 ">
+            <button
+              class="bg-[#FFFFFF] shadow-xl p-2 rounded-full w-20 text-[#4857FC] hover:cursor-pointer data-btn">All</button>
+            <button class="text-[#CBD1D9] hover:cursor-pointer data-btn">weekly</button>
+            <button class="text-[#CBD1D9] hover:cursor-pointer data-btn">monthly</button>
+            <button class="text-[#CBD1D9] hover:cursor-pointer data-btn">yearly</button>
+          </div>
+        </div>
+        <!--data change-->
+
+        <div class="flex p-2">
+          <!--more data-->
+          <div class="flex">
+            <div class="bg-[#F1EEFF] p-2 h-fit w-fit rounded-full ml-1">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="#7B67F7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-circle-dollar-sign-icon lucide-circle-dollar-sign">
+                <circle cx="12" cy="12" r="10" />
+                <path d="M16 8h-6a2 2 0 1 0 0 4h4a2 2 0 1 1 0 4H8" />
+                <path d="M12 18V6" />
+              </svg>
+            </div>
+
+            <div class="flex justify-center items-center flex-col">
+              <h4 class="text-[#ACB0BF] text-sm">Total profits</h4>
+              <h2 class="text-[#1A1A1A] font-semibold text-xl" id="profits">90000</h2>
+            </div>
+
+          </div>
+
+          <div class="flex ml-80">
+            <div class="bg-[#EAF9F2] p-2 h-fit w-fit rounded-full ml-1">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="#51CD8B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-notebook-text-icon lucide-notebook-text">
+                <path d="M2 6h4" />
+                <path d="M2 10h4" />
+                <path d="M2 14h4" />
+                <path d="M2 18h4" />
+                <rect width="16" height="20" x="4" y="2" rx="2" />
+                <path d="M9.5 8h5" />
+                <path d="M9.5 12H16" />
+                <path d="M9.5 16H14" />
+              </svg>
+            </div>
+
+            <div class="flex justify-center items-center flex-col">
+              <h4 class="text-[#ACB0BF] text-sm">Total bookings</h4>
+              <h2 class="text-[#1A1A1A] font-semibold text-xl" id="Total-bookings">10</h2>
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <!--end:more data-->
+      </div>
+      <!--end:container data-->
+
+
+      <!--for cards-->
+
+      <div class="mt-4  p-2 mb-10">
+        <div>
+          <!--head for card-->
+          <div>
+            <h1 class="text-4xl font-semibold" id="Branch">Branch</h1>
+
+          </div>
+          <!--head for card-->
+
+          <!--card contaner-->
+          <div class="mt-6 mb-6 flex space-x-3 ">
+            <!--one-->
+            <div class="bg-white w-90  rounded-xl h-40 ">
+              <!--headr card-->
+              <div class="flex  items-center  justify-between p-2">
+                <h1 class="font-semibold text-xl">Madinah</h1>
+
+                <div class="flex items-center justify-center">
+                  <svg id="triangle" class="ml-3" xmlns="http://www.w3.org/2000/svg" width="15" height="15"
+                    viewBox="0 0 24 24" fill="#2ABF73" stroke="none" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" class="lucide lucide-triangle-icon lucide-triangle">
+                    <path d="M13.73 4a2 2 0 0 0-3.46 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z" />
+                  </svg>
+                  <h4 id="Madinah-Branch">%40</h4>
+                </div>
+
+
+
+
+              </div>
+              <!--headr card-->
+
+              <!--chart-->
+              <div class=" w-full h-26 ">
+                <div class="chart-container h-full w-full mt-3  ">
+                  <canvas id="card-one" class=" w-full h-full   rounded-xl "></canvas>
+                </div>
+              </div>
+
+              <!--chart-->
+            </div>
+            <!--end:one-->
+
+
+
+
+               <!--two-->
+            <div class="bg-white w-90  rounded-xl h-40 ">
+              <!--headr card-->
+              <div class="flex  items-center  justify-between p-2">
+                <h1 class="font-semibold text-xl">Makkah</h1>
+
+                <div class="flex items-center justify-center">
+                  <svg id="triangle" class="ml-3" xmlns="http://www.w3.org/2000/svg" width="15" height="15"
+                    viewBox="0 0 24 24" fill="#2ABF73" stroke="none" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" class="lucide lucide-triangle-icon lucide-triangle">
+                    <path d="M13.73 4a2 2 0 0 0-3.46 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z" />
+                  </svg>
+                  <h4 id="Makkah-Branch">%7</h4>
+                </div>
+
+
+
+
+              </div>
+              <!--headr card-->
+
+              <!--chart-->
+              <div class=" w-full h-26 ">
+                <div class="chart-container h-full w-full mt-3  ">
+                  <canvas id="card-two" class=" w-full h-full   rounded-xl "></canvas>
+                </div>
+              </div>
+
+              <!--chart-->
+            </div>
+            <!--end:two-->
+
+
+                  <!--three-->
+            <div class="bg-white w-90  rounded-xl h-40 ">
+              <!--headr card-->
+              <div class="flex  items-center  justify-between p-2">
+                <h1 class="font-semibold text-xl">Jeddah</h1>
+
+                <div class="flex items-center justify-center">
+                  <svg id="triangle" class="ml-3" xmlns="http://www.w3.org/2000/svg" width="15" height="15"
+                    viewBox="0 0 24 24" fill="#2ABF73" stroke="none" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" class="lucide lucide-triangle-icon lucide-triangle">
+                    <path d="M13.73 4a2 2 0 0 0-3.46 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z" />
+                  </svg>
+                  <h4 id="Jeddah-Branch">%10</h4>
+                </div>
+
+
+
+
+              </div>
+              <!--headr card-->
+
+              <!--chart-->
+              <div class=" w-full h-26 ">
+                <div class="chart-container h-full w-full mt-3  ">
+                  <canvas id="card-three" class=" w-full h-full   rounded-xl "></canvas>
+                </div>
+              </div>
+
+              <!--chart-->
+            </div>
+            <!--end:three-->
+
+
+
+                 <!--three-->
+            <div class="bg-white w-90  rounded-xl h-40 ">
+              <!--headr card-->
+              <div class="flex  items-center  justify-between p-2">
+                <h1 class="font-semibold text-xl">Riyadh</h1>
+
+                <div class="flex items-center justify-center">
+                  <svg id="triangle" class="ml-3" xmlns="http://www.w3.org/2000/svg" width="15" height="15"
+                    viewBox="0 0 24 24" fill="#2ABF73" stroke="none" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" class="lucide lucide-triangle-icon lucide-triangle">
+                    <path d="M13.73 4a2 2 0 0 0-3.46 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z" />
+                  </svg>
+                  <h4 id="Riyadh-Branch">%40</h4>
+                </div>
+
+
+
+
+              </div>
+              <!--headr card-->
+
+              <!--chart-->
+              <div class=" w-full h-26 ">
+                <div class="chart-container h-full w-full mt-3  ">
+                  <canvas id="card-four" class=" w-full h-full   rounded-xl "></canvas>
+                </div>
+              </div>
+
+              <!--chart-->
+            </div>
+            <!--end:three-->
+
+          </div>
+
+          <!--end:card contaner-->
+        </div>
+      </div>
+
+      <!--end:for cards-->
+
+      <!--booking-->
+
+      <div id="Booking">
+        <div>
+          <h1 class="text-4xl font-semibold">Booking</h1>
+        </div>
+
+        <!--card but with js-->
+        <div id="Booking-cards-container" class="mt-4 mb-4 space-x-3 flex overflow-scroll overflow-y-hidden [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden">
+       
+
+          <!--come from js -->
+        </div>
+         <!--end:card but with js-->
+      </div>
+       <!--end:booking-->
+
+       <!--content-->
+       <div class="mt-15 mb-10 " id="content">
+        <!--header-->
+         <div>
+           <h1 class="text-4xl font-semibold">Content</h1>
+
+         </div>
+
+
+         <!--cards content container-->
+         <div id="content-cards-contanier" class="mt-4 mb-4 space-x-3 flex overflow-scroll overflow-y-hidden [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden">
+
+
+           <!-- form js-->
+
+          
+
+         </div>
+            <!--end:cards content container-->
+
+
+
+       <!--Room-->
+       <div class="mt-20 mb-10 " id="Room">
+        <!--header-->
+         <div>
+           <h1 class="text-4xl font-semibold">Room</h1>
+
+         </div>
+
+
+         <!--cards room container-->
+         <div id="content-cards-contanier" class="mt-4 mb-4 space-x-3 flex overflow-scroll overflow-y-hidden [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden">
+
+
+          <!--card-->
+          <div class=" w-90  rounded-xl h-50 hover:cursor-pointer  bg-white flex-shrink-0 shadow-md">
+              <!--head-->
+              <div class=" flex h-20 p-1">
+                <div class="bg-[#ECF5FF] p-2 w-fit rounded-full h-fit">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#64B9FC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-house-icon lucide-house"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"/><path d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+                </div>
+
+                <div class="flex flex-col p-2 justify-center items-start">
+                  <h1 class="text-lg font-semibold">Standard Room</h1>
+                  <h1 class="text-sm font-semibold bg-[#ECF5FF] text-[#64B9FC] p-2 rounded-full" id="Standard_Room">Guests m</h1>
+                </div>
+
+              </div>
+              <!--end:head-->
+
+             <div class=" w-full h-30   rounded-b-lg ">
+                <div class="chart-container h-full w-full   ">
+                  <canvas id="Standard-card" class=" w-full h-full   rounded-xl "></canvas>
+                </div>
+              </div>
+
+
+          </div>
+          <!--end:card-->
+
+
+          <!--card-->
+          <div class=" w-90  rounded-xl h-50 hover:cursor-pointer  bg-white flex-shrink-0 shadow-md">
+              <!--head-->
+              <div class=" flex h-20 p-1">
+                <div class="bg-[#ECF5FF] p-2 w-fit rounded-full h-fit">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#64B9FC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-house-icon lucide-house"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"/><path d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+                </div>
+
+                <div class="flex flex-col p-2 justify-center items-start">
+                  <h1 class="text-lg font-semibold">Royal Suite</h1>
+                  <h1 class="text-sm font-semibold bg-[#ECF5FF] text-[#64B9FC] p-2 rounded-full" id="Royal_room">Guests m</h1>
+                </div>
+
+              </div>
+              <!--end:head-->
+
+             <div class=" w-full h-30   rounded-b-lg ">
+                <div class="chart-container h-full w-full   ">
+                  <canvas id="Royal-card" class=" w-full h-full   rounded-xl "></canvas>
+                </div>
+              </div>
+
+
+          </div>
+          <!--end:card-->
+
+
+           <!--card-->
+          <div class=" w-90  rounded-xl h-50 hover:cursor-pointer  bg-white flex-shrink-0 shadow-md">
+              <!--head-->
+              <div class=" flex h-20 p-1">
+                <div class="bg-[#ECF5FF] p-2 w-fit rounded-full h-fit">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#64B9FC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-house-icon lucide-house"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"/><path d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+                </div>
+
+                <div class="flex flex-col p-2 justify-center items-start">
+                  <h1 class="text-lg font-semibold">Deluxe Room</h1>
+                  <h1 class="text-sm font-semibold bg-[#ECF5FF] text-[#64B9FC] p-2 rounded-full" id="Deluxe-Room">Guests m</h1>
+                </div>
+
+              </div>
+              <!--end:head-->
+
+             <div class=" w-full h-30   rounded-b-lg ">
+                <div class="chart-container h-full w-full   ">
+                  <canvas id="Deluxe-card" class=" w-full h-full   rounded-xl "></canvas>
+                </div>
+              </div>
+
+
+          </div>
+          <!--end:card-->
+
+
+
+
+          
+        
+
+          
+
+         </div>
+            <!--end:cards content container-->
+
+
+       </div>
+
+        <!--end:Room-->
+
+
+
+
+    </div>
+
+  </section>
+  <!--for show data-->
+
+
+
+
+
+  <script src="../../js/khalid/dashboard.js"></script>
+
+
+</body>
+
+</html>

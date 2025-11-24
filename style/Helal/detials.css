@@ -1,5 +1,4 @@
 
-
 .flex {
        display: flex;
        justify-content: space-around;
@@ -56,10 +55,10 @@
 .booking{
     background-color:#0A2A66;
     border-radius: 16px;
-    -webkit-border-radius:;
-    -moz-border-radius:;
-    -ms-border-radius:;
-    -o-border-radius:;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    -ms-border-radius: 16px;
+    -o-border-radius: 16px;
     height: 70px;
     padding: 2px;
     color: white;
@@ -73,75 +72,48 @@
     font-size: 10pt;
 }
 
-
-  /* <!-- .......................................First Nav....up........................ --> */
-.blockService{
-    background-color: #0A2A66;
-    color: white;
-    width: 100%;
+.detialB{
     height: 200px;
-    margin-top: 100px;
-    padding: 50px;
-    text-align: center;
-    font-weight: bold;
-}
-.F4S{
-    display: flex;
-    justify-content: space-around;
     margin-top: 50px;
-    margin-left: 20px;
-}
-.F4S div{
-   width: calc(94%/4);
-    box-shadow: 0 5px 10px rgb(0, 0, 0,0.15);
-  padding: 15px;
-  margin-left: 20px;
-
-}
-.imF4S{
-    width: 50px;
-    height: 50px;
-    margin-left: 7px;
-    margin-top: 5px;
-}
-.f4sb{
-    width: 65px;
-    height: 65px;
-    border-radius: 50%;
-    background-color:#F7F7F7;
-}
-/* ......................Additional Services........................ */
-.AddSer{
-    justify-content: space-around;
-    width: 100%;
-    height: 200px;
-    display: flex;
-}
-.AddSer section{
-     width: calc(80%/2);
-     border: 1px solid rgb(75, 75, 65);
-     border-radius: 16px;
-     text-align: left;
-     margin-left: 100px;
-     padding: 30px;
-}
-/* <!-- ..................Experience Our Distinguished Services........... --> */
-
-.Experience{
-    background-color: #0A2A66;
     color: white;
     text-align: center;
-    width: 100%;
-    height: 200px;
+    background-color: #0A2A66;
     padding: 50px;
-    margin-top: 50px;
 }
-.Distinguished{
-    background-color: #D4AF37;
-    color: #0A2A66;
-    height: 50px;
-    width: 120px;
-    border-radius: 8px;
+.facil{
+    height: 150px;
+    margin-top: -20px;
+    padding: 50px;
+    justify-content: space-around;
+    display: flex;
+
+}
+.facil div {
+    width: calc(92%/5);
+   box-shadow: 0 5px 10px rgb(0, 0, 0,0.15);
+   padding-left: 50px;
+   margin-right: 5px;
+   border-radius: 16px;
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+
+}
+.map{
+    width: a100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color:#0A2A66; */
+    flex-direction: column;
+}
+main{
+    background-color: #f7f7f7;
+    color: black;
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 /* ....................footer................ */

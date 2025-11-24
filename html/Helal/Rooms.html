@@ -43,17 +43,17 @@
       </a>
     </div>
     <div class="hove">
-      <a href="Offers.html" style="text-decoration: none;">
+      <a href="../../html/ahmad/Offers.html" style="text-decoration: none;">
         <h2 style="color:black">Offers</h2>
       </a>
     </div>
     <div class="hove">
-      <a href="About Us.html" style="text-decoration: none;">
+      <a href="../../html/ahmad/About Us.html" style="text-decoration: none;">
         <h2 style="color:black">About Us</h2>
       </a>
     </div>
     <div class="hove">
-      <a href="Contact.html" style="text-decoration: none;">
+      <a href="../../html/khalid/Content.html" style="text-decoration: none;">
         <h2 style="color:black">Contact</h2>
       </a>
     </div>
@@ -71,19 +71,20 @@
   <div class="filter">
     <table>
       <br>
-      <tr>
-        <td><img class="im" src="../../photo/Helal/filter.png" alt="" style="width: 16px;height: 16px;">
-          Filter By</td>
+      <tr style="margin-top: 20px;">
+        <td style="margin-top: 20px;">
+          <p style="color: black;">          <img  src="../../photo/Helal/filter.png" alt="" style="width: 16px;height: 16px;">
+ Filter By : </p></td>
         <td>
-          <select name="All Types" id="mySelect" onchange="showDiv()">
-            <option value="">All Type</option>
+          <select name="All Types" class="select_box" id="roomSelect" onchange="filterRooms()">
+            <option value="all">All Type</option>
             <option value="div1">Standard Room</option>
-            <option value=" div2">Deluxe Room</option>
-            <option value="div3 ">Royal Suite</option>
+            <option value="div2">Deluxe Room</option>
+            <option value="div3">Royal Suite</option>
           </select>
         </td>
         <td>
-          <select name="All Types" id="select_box">
+          <select name="All Types" class="select_box">
             <option value="">All Branches</option>
             <option value="">Makkah</option>
             <option value=" ">Madinah</option>
@@ -93,11 +94,10 @@
           </select>
         </td>
         <td>
-          <select name="All Types" id="select_box">
-            <option value="">Price</option>
-            <option value="">Low to High</option>
-            <option value=" ">High to Low</option>
-            <option value=" ">Royal Suite</option>
+          <select name="All Types" id="priceSelect" onchange="sortByPrice()" class="select_box">
+            <option value="all">Price</option>
+            <option value="LtoH">Low to High</option>
+            <option value="HtoL">High to Low</option>
           </select>
         </td>
 
@@ -107,7 +107,7 @@
   </div>
   <main class="div4">
     <div class="div5">
-      <div id="div1">
+      <div id="div1" data-price="250">
         <img class="size2" src="../../photo/Helal/r1.jpg" alt="">
         <h1 style="margin-left: 15px;"> Standard Room</h1>
         <P><img class="iconu" src="../../photo/Helal/user.png" alt=""> 2 Guests</P>
@@ -122,7 +122,7 @@
             Details</BUtton></p>
       </div>
 
-      <div id="div2">
+      <div id="div2" data-price="400">
         <img class="size2" src="../../photo/Helal/r2.jpg" alt="">
         <h1 style="margin-left: 15px;">Deluxe Room</h1>
         <P><img class="iconu" src="../../photo/Helal/user.png" alt=""> 3 Guests</P>
@@ -137,7 +137,7 @@
             Details</BUtton></p>
       </div>
 
-      <div id="div3"><img class="size2" src="../../photo/Helal/r3.jpg" alt="">
+      <div id="div3" data-price="1200"><img class="size2" src="../../photo/Helal/r3.jpg" alt="">
         <h1 style="margin-left: 15px;"> Royal Suite</h1>
         <P><img class="iconu" src="../../photo/Helal/user.png" alt=""> 4 Guests</P>
         <p><img class="iconu" src="../../photo/Helal/star.png" alt=""> Wi-Fi<img class="iconu"
@@ -151,24 +151,174 @@
             Details</BUtton></p>
 
       </div>
-      <script>
-        function showDiv() {
-          var selected = document.getElementById("mySelect").value;
-          document.getElementById("div1").style.display = "none";
-          document.getElementById("div2").style.display = "none";
-          document.getElementById("div3").style.display = "none";
-          if (selected == "") {
-            document.getElementById(selected).style.display = "block";
-
-          }
-
-
-
-        }
-      </script>
-
     </div>
   </main>
+  <div class="looking"><br><br>
+    <h1>Didn't Find What You're Looking For?</h1>
+    <p>Contact us for help choosing the right room for you</p>
+    <a href="Contact.html" style="text-decoration: none;">
+      <button class="contactt"><h4 style="color: #0A2A66;">Contact Us</h4></button>
+    </a>
+  </div>
+  <br><br>
+  <section class="nav7">
+    <div class="div11">
+      <div>
+        <table>
+          <tr>
+            <td class="footer_top">
+              <h2>Hilal Hotels Chain</h2>
+            </td>
+          </tr>
+          <tr>
+            <td>Luxury hospitality experience in</td>
+          </tr>
+
+          <tr>
+            <td>four major cities of Saudi</td>
+          </tr>
+          <tr>
+            <td>Arabia</td>
+          </tr>
+
+        </table>
+
+      </div>
+      <div>
+        <table>
+          <tr>
+            <td class="footer_top">
+              <h2>Quick Links</h2>
+            </td>
+          </tr>
+          <tr>
+            <td>Home</td>
+          </tr>
+
+          <tr>
+            <td>Branches</td>
+          </tr>
+          <tr>
+            <td>Roome</td>
+          </tr>
+          <tr>
+            <td>Services</td>
+          </tr>
+          <tr>
+            <td>About Us</td>
+          </tr>
+
+        </table>
+      </div>
+      <div>
+        <table>
+          <tr>
+            <td class="footer_top">
+              <h2>Contact Us</h2>
+            </td>
+          </tr>
+          <tr>
+            <td><img class="size4" src="../../photo/Helal/telephone.png" alt=""> +966 5XXXXXXXX</td>
+          </tr>
+          <tr>
+            <td><img class="size4" src="../../photo/Helal/mail.png" alt=""> info@hilalhotels.sa</td>
+          <tr>
+            <td><img class="size4" src="../../photo/Helal/locationic.png" alt=""> Kingdom of Saudi Arabia</td>
+          </tr>
+          </tr>
+        </table>
+      </div>
+      <div>
+        <table>
+          <tr>
+            <td class="footer_top">
+              <h2>Newsletter</h2>
+            </td>
+          </tr>
+          <tr>
+            <td>Subscribe to get the latest </td>
+          </tr>
+          <tr>
+            <td>offers</td>
+          </tr>
+          <tr>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+          </tr>
+          <tr>
+            <td>
+              <img class="size4" src="../../photo/Helal/facebook.png" alt="">
+              <img class="size4" src="../../photo/Helal/instagram.png" alt="">
+              <img class="size4" src="../../photo/Helal/twitter.png" alt="">
+            </td>
+          </tr>
+        </table>
+
+      </div>
+
+    </div>
+    <br>
+    <hr style="background-color: rgb(24, 25, 26);margin-left: 20px;margin-right: 30px;">
+    <p style="color: white;text-align: center;">© 2024 Hilal Hotels Chain. All rights reserved.</p>
+  </section>
+
+  <script>
+    function filterRooms() {
+      let value = document.getElementById("roomSelect").value;
+      document.getElementById("div1").style.display = "none";
+      document.getElementById("div2").style.display = "none";
+      document.getElementById("div3").style.display = "none";
+      if (value === "all") {
+        document.getElementById("div1").style.display = "block";
+        document.getElementById("div2").style.display = "block";
+        document.getElementById("div3").style.display = "block";
+      } else {
+        document.getElementById(value).style.display = "block";
+      }
+    }
+  </script>
+  <script>
+    function sortByPrice() {
+      const select = document.getElementById("priceSelect").value;
+      const container = document.querySelector(".div5");
+      const rooms = Array.from(container.children);
+      rooms.sort((a, b) => {
+        let priceA = parseInt(a.getAttribute("data-price"));
+        let priceB = parseInt(b.getAttribute("data-price"));
+        if (select === "LtoH") {
+          return priceA - priceB;
+        } else if (select === "HtoL") {
+          return priceB - priceA;
+        }
+      });
+      rooms.forEach(room => container.appendChild(room));
+    }
+  </script>
+
+
 </body>
 
 </html>

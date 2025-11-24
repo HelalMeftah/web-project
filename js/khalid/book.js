@@ -15,6 +15,7 @@ let Arrival_input=document.querySelector("#Arrival-input")
 let adults=document.querySelector("#adults")
 let children=document.querySelector("#children")
 let guests_input=document.querySelector("#guests-input")
+let btn=document.querySelector("#book-btn")
 
 
 
@@ -33,6 +34,14 @@ Departure_date.value=time_zone
 Arrival_date.setAttribute("min",time_zone)
 Departure_date.setAttribute("min",time_zone)
 
+//to follow the user and change
+Arrival_date.addEventListener("change",()=>{
+   Departure_date.setAttribute("min",Arrival_date.value)
+ 
+})
+
+
+
 
 // for database
 let user ={
@@ -43,11 +52,64 @@ let user ={
     Room:"",
     ArrivalDates:"",
     Departure_date:"",
-    guests:{
-        Adults:"",
-        children:""
+    Adults:"",
+    children:"",
+    price:0
+   
+}
+
+
+//find price
+
+function price(){
+    let dayone=new Date(user.ArrivalDates);
+    let daytwo=new Date(user.Departure_date);
+
+    let diffms=daytwo-dayone
+    let diffDay=diffms / (1000 * 60 * 60 * 24)
+    console.log(`dif is ${diffDay}`)
+
+    if(room_type.value==="Standard Room - 200 SAR / night"){
+      if(diffDay>0){
+        user.price=diffDay *200
+      }else{
+        user.price=200
+      }
+    }else if(room_type.value==="Deluxe Room - 400 SAR / night"){
+         if(diffDay===0){
+            user.price=400
+        }else{
+          user.price= diffDay * 400
+
+        }
+    }else if(room_type.value==="Royal Suite - 1200 SAR / night"){
+           if(diffDay===0){
+            user.price=1200 
+        }else{
+          user.price= diffDay * 1200 
+
+        }
     }
 }
+
+
+function sanddata(){
+       console.log(user)
+ fetch("http://localhost/web-project/backend/khalid/book.php", {
+    method: "POST",
+    headers: {"Content-Type": "application/json"},
+    body: JSON.stringify(user)
+})
+.then(res => res.json()) 
+.then(txt => console.log(txt))
+}
+
+
+
+btn.addEventListener("click",()=>{
+    console.log("Send")
+    sanddata()
+})
 
 
 Name.addEventListener("input",(e)=>{
@@ -113,6 +175,8 @@ room_type.addEventListener("input",(e)=>{
  
 })
 
+
+
 Arrival_date.addEventListener("input",(e)=>{
     if(user.Departure_date===""){
             Arrival_input.textContent=e.target.value ;
@@ -131,30 +195,43 @@ Departure_date.addEventListener("input",(e)=>{
    
     Arrival_input.textContent=`${user.ArrivalDates} to `+ e.target.value 
     user.Departure_date=e.target.value
+
+
+
+    
 })
 
 
 adults.addEventListener("input",(e)=>{
-    if(user.guests.Adults===""){
+    if(user.Adults===""){
         guests_input.textContent="1 Adults"
     }
  if(e.target.value >= 1){
         guests_input.textContent=e.target.value + ` Adults `;
-        user.guests.Adults=e.target.value
+        user.Adults=e.target.value
         console.log(user)
     }
     if(e.target.value===0){
         guests_input.textContent="Not specified"
     }
+
+
+    price()
 })
 
 
 children.addEventListener("input",(e)=>{
+   
 
     if(e.target.value >0){
-        guests_input.textContent=`${user.guests.Adults} Adults ` +`, ${e.target.value} children`
-    }else{
-               guests_input.textContent=`${user.guests.Adults} Adults ` 
+        guests_input.textContent=`${user.Adults} Adults ` +`, ${e.target.value} children`
+        user.children=e.target.value
+    }
+    else{
+               guests_input.textContent=`${user.Adults} Adults ` 
+               console.log("is low")
+                       user.children=e.target.value
+
  
     }
      
