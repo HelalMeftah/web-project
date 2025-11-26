@@ -92,7 +92,20 @@ contact_alert.classList.add("hidden")
     },3000)
 
 
-    sand()
+    async function order_process(){
+        //here make sure is order
+        await sand()
+        contact_email.value=""
+        contact_name.value=""
+        contact_message.value=""
+        contact_number.value=""
+
+
+    }
+order_process()
+
+
+
     }
    
 })

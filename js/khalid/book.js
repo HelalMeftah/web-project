@@ -16,6 +16,8 @@ let adults=document.querySelector("#adults")
 let children=document.querySelector("#children")
 let guests_input=document.querySelector("#guests-input")
 let btn=document.querySelector("#book-btn")
+let contact_alert=document.querySelector("#contact-alert")
+let alert_content=document.querySelector("#alert-content")
 
 
 
@@ -43,6 +45,9 @@ Arrival_date.addEventListener("change",()=>{
 
 
 
+
+
+
 // for database
 let user ={
     name:"",
@@ -52,11 +57,15 @@ let user ={
     Room:"",
     ArrivalDates:"",
     Departure_date:"",
-    Adults:"",
-    children:"",
+    Adults:"1",
+    children:"0",
     price:0
    
 }
+
+ // to date not be empty
+user.ArrivalDates=time_zone
+user.Departure_date=time_zone
 
 
 //find price
@@ -101,7 +110,14 @@ function sanddata(){
     body: JSON.stringify(user)
 })
 .then(res => res.json()) 
-.then(txt => console.log(txt))
+.then(txt =>{
+     console.log(txt)
+     console.log(txt.message)
+     aleart(txt.message)
+}
+    
+    
+    )
 }
 
 
@@ -172,6 +188,7 @@ room_type.addEventListener("input",(e)=>{
         user.Room=e.target.value
 
     }
+    price()
  
 })
 
@@ -186,6 +203,8 @@ Arrival_date.addEventListener("input",(e)=>{
   Arrival_input.textContent=e.target.value +` to ${user.ArrivalDates}`;
     user.ArrivalDates=e.target.value
     }
+
+    price()
   
 
 })
@@ -195,6 +214,8 @@ Departure_date.addEventListener("input",(e)=>{
    
     Arrival_input.textContent=`${user.ArrivalDates} to `+ e.target.value 
     user.Departure_date=e.target.value
+
+    price()
 
 
 
@@ -216,7 +237,7 @@ adults.addEventListener("input",(e)=>{
     }
 
 
-    price()
+    
 })
 
 
@@ -236,6 +257,24 @@ children.addEventListener("input",(e)=>{
     }
      
 })
+
+
+// show alert
+function aleart(m){
+    contact_alert.classList.remove("hidden")
+
+    if(m==="all input required"){
+    alert_content.textContent="all input required"
+
+    }else{
+            alert_content.textContent="We have received your booking request and will contact you later."
+
+    }
+
+    setTimeout(()=>{
+      contact_alert.classList.add("hidden")
+    },3000)
+}
 
 
 
