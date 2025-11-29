@@ -100,7 +100,7 @@ while($row=mysqli_fetch_assoc($res11)){
 };
 
 
-$q12 = 'select user_name  ,user_email , user_ArrivalDates , user_Departure_date  ,user_Room room from booking ;';
+$q12 = 'select user_name  ,user_email , user_ArrivalDates , user_Departure_date  ,user_Room room from booking order by user_id desc ;';
 $res12 = mysqli_query($conn, $q12);
 $booking_details = [];
 

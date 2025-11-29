@@ -1,80 +1,321 @@
-.flex {
-    display: flex;
-    justify-content: space-around;
-    z-index: 10000;
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+body {
+margin: 0;
+
+    font-family: 'Poppins';
+margin-top: 100px;
+}
+
+.navbar {
     position: fixed;
-    width: 100%;
-    background-color: white;
     top: 0;
-
-}
-
-.div2 {
+    left: 0;
+    right: 0;
+    font-family: 'Poppins';
+    font-size: 1000px;
     display: flex;
-    background-color: white;
-    margin-top: 2px;
+    align-items: center;
+    justify-content: space-between;
+    color: var(0.37 0.03 259. 1);
+    padding: 14px 60px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #e1e4ea;
+    z-index: 1000;
 }
 
-.im {
-    height: 80px;
-    width: 80px;
-    margin-top: -5px;
-    margin-left: 10px;
-    transform: rotate(0deg);
-    -webkit-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -ms-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+    gap: 12px;
 }
 
-.image {
-    text-align: center;
-    width: 60px;
-    height: 60px;
-    margin-top: 10px;
+.logo-background {
+    padding-bottom: 30px;
+    padding-left: 10px;
+    width: 40px;
+    height: 20px;
     background-color: #0A2A66;
+    border-radius: 100%;
+}
+
+.logo-img {
+
     border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
+    display: flex;
+    align-items: center;
+    width: 80px;
 }
 
-.logo {
-    margin-top: 2px;
-}
-
-.A {
-    margin-top: -1px;
+.logo-text {
+    font-weight: 900;
+    font-size: 20px;
+    color: #0A2A66;
 }
 
 
-.flex div {
-    width: calc(90%10);
-    font-family: mont;
+.navbar-links {
+    display: flex;
+    align-items: center;
+    gap: 32px;
 }
 
-.booking {
+.nav-link {
+    text-decoration: none;
+    font-size: 17px;
+    color: #333A4D;
+    font-weight: 400;
+    transition: 0.2s;
+}
+
+.nav-link:hover {
+    color: #0A2A66;
+}
+
+.nav-link.active {
+    color: #D4AF37;
+    font-weight: 500;
+}
+
+
+.butten-book {
     background-color: #0A2A66;
-    border-radius: 16px;
-    -webkit-border-radius: 16px;
-    -moz-border-radius: 16px;
-    -ms-border-radius: 16px;
-    -o-border-radius: 16px;
-    height: 70px;
-    padding: 2px;
-    color: white;
+    color: #ffffff;
+    border: none;
+    padding: 17px 28px;
+    border-radius: 12px;
+    font-size: 14px;
+    font-weight: 7  00;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.bbutten-book:hover {
+    opacity: 0.9;
+}
+/* النهاية من الناف هنا  */
+
+
+
+/*  */
+.page-header{
+height: 300px;
+background-color: #0A2A66;
+
+}
+.page-text{
+display: flex;
+align-items: center;
+justify-content: center;
+color: #e1e4ea;
+font-size: 50px;
+padding-top: 50px;
+
+}
+.hyper-tex{
+    display: flex;
+    justify-content: center;
+    padding-top: 5px;
+    color: #E5E7EB;
+    font-size: 20px;
+      font-weight: 600;
+}
+/* نهاية الهيدر الثاني  */
+
+
+
+
+.post-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    margin: 30px 100px;
+}
+
+
+.offer-preview {
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.offer-preview:hover {
+    transform: scale(1.02);
+}
+
+
+.thumbnaile {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 12px 12px 0 0;
+}
+
+.offer-details-grid {
+    display: grid;
+    grid-template-columns: 40px 1fr;
+    gap: 10px;
+    padding: 20px;
+}
+
+
+.logo-img {
+    width: 40px;
     margin-top: 5px;
 }
 
-.hove:hover {
-    color: #D4AF37;
+.offer-info {
+    padding: 0;
 }
 
-.hove {
-    font-weight: 200;
-    font-size: 10pt;
+.title {
+    font-weight: 900;
+    font-size: 22px;
+    margin: 0 0 5px 0;
+    color: #0A2A66;
+}
+
+.title-text {
+    font-size: 17px;
+    font-weight: 700;
+    color: #2B2B2B;
+    margin: 0;
+}
+
+.text-info {
+    color: #606060;
+    font-size: 14px;
+    margin: 8px 0;
+}
+
+
+.text-buttom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 12px;
+}
+
+
+.offer-buttom {
+    background-color: #0A2A66;
+    border-radius: 20px;
+    padding: 8px 18px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    
+}
+/* تبا له  */
+.terms{
+
+    display: flex;
+    justify-content: center;
+font-weight: 900;
+    color: #0A2A66;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.order{
+margin-left: 560px;
+font-weight: 300;
+
+
+}
+.termsANd{
+
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+
+}
+
+
+/* تبا له 2  */
+.learn-section {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.learn-title {
+  color: #0A2A66;
+  font-size: 28px;
+  font-weight: 900;
+}
+
+.learn-text {
+  color: #606060;
+  margin: 10px 0 25px;
+}
+
+.learn-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.learn-btn-primary {
+  background: #0A2A66;
+  color: white;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.learn-btn-outline {
+  background: white;
+  color: #0A2A66;
+  border: 2px solid #0A2A66;
+  padding: 10px 25px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+
+.footer {
+  background: #0A2A66;
+  color: white;
+  padding: 60px 100px;
+  margin-top: 50px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1fr;
+  gap: 40px;
+}
+
+.footer-title {
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+
+.footer-text {
+  line-height: 1.7;
+}
+
+.footer-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+  line-height: 2;
+}
+
+.newsletter-btn {
+  background: #D6B23A;
+  padding: 8px 18px;
+  border: none;
+  border-radius: 6px;
+  margin-top: 10px;
+}
+
+.footer-line {
+  margin: 40px 0;
+  border-color: rgba(255,255,255,0.2);
+}
+
+.footer-bottom {
+  text-align: center;
 }

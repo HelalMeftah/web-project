@@ -33,7 +33,7 @@ $price=isset($data["price"]) ? $data["price"]:"";
 
 
 
-if(empty($name)||empty($email)||empty($phone)||empty($Room)||empty($ArrivalDates)||empty($Departure_date)||empty($Adults)||empty($children)||empty($City)||!is_numeric($price)){
+if(empty($name)||empty($email)||empty($phone)||empty($Room)||empty($ArrivalDates)||empty($Departure_date)||$Adults===""||$children===""||empty($City)||!is_numeric($price)){
     echo json_encode([
         "message"=>"all input required",
         "data"=>$data
@@ -51,11 +51,11 @@ if(empty($name)||empty($email)||empty($phone)||empty($Room)||empty($ArrivalDates
 
 if(mysqli_query($conn,$query)){
     echo json_encode([
-        "massage"=>"data send to database"
+        "message"=>"data send to database"
     ]);
 }else{
     echo json_encode([
-        "massage"=>"data no go to database"
+        "message"=>"data no go to database"
     ]);
 }
   
