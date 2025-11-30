@@ -14,53 +14,28 @@
 </head>
 
 <body>
-  <div class="flex">
-    <div class="div2">
-      <div class="image"><img class="im" src="../../photo/Helal/moon_gold.png" alt=""></div>
-      <div class="logo">
-        <h2>Hilal Hotels <p class="A" style="color:#D4AF37;">فنادق الهلال</p>
-        </h2>
+ <header class="navbar">
+
+    <div class="navbar-left">
+      <div class="logo-background">
+        <img class="logo-img" src="../../photo/Helal/moon_gold.png" alt="Hilal Hotels">
       </div>
+      <span class="logo-text">Hilal Hotels</span>
     </div>
-    <div class="hove">
-      <a href="home.html" style="text-decoration: none;">
-        <h2 style="color:black">Home</h2>
-      </a>
-    </div>
-    <div class="hove">
-      <a href="Branches.html" style="text-decoration: none;">
-        <h2 style="color:black;">Branches</h2>
-      </a>
-    </div>
-    <div class="hove">
-      <a href="Rooms.html" style="text-decoration: none;">
-        <h2 style="color:#D4AF37">Rooms</h2>
-      </a>
-    </div>
-    <div class="hove">
-      <a href="Services.html" style="text-decoration: none;">
-        <h2 style="color:black">Services</h2>
-      </a>
-    </div>
-    <div class="hove">
-      <a href="../../html/ahmad/Offers.html" style="text-decoration: none;">
-        <h2 style="color:black">Offers</h2>
-      </a>
-    </div>
-    <div class="hove">
-      <a href="../../html/ahmad/About Us.html" style="text-decoration: none;">
-        <h2 style="color:black">About Us</h2>
-      </a>
-    </div>
-    <div class="hove">
-      <a href="../../html/khalid/Content.html" style="text-decoration: none;">
-        <h2 style="color:black">Contact</h2>
-      </a>
-    </div>
-    <div class="booking">
-      <h2>Booking Now</h2>
-    </div>
-  </div>
+
+    <nav class="navbar-links">
+      <a href="../Helal/home.html" class="nav-link">Home</a>
+      <a href="../Helal/Branches.html" class="nav-link">Branches</a>
+      <a href="../Helal/Rooms.html" class="nav-link"><span style="color: #D4AF37;">Rooms</span></a>
+      <a href="../Helal/Services.html" class="nav-link">Services</a>
+      <a href="../ahmad/Offers.html" class="nav-link">Offers</a>
+      <a href="../ahmad/Offers.html" class="nav-link ">About Us</a>
+      <a href="../khalid/Content.html" class="nav-link">Contact</a>
+    </nav>
+
+    <button class="butten-book"><a href="../khalid/Book.html" style="text-decoration: none; color: white;">Book Now</a></button>
+
+  </header>
 
   <section class="secb1">
     <h1>Our Rooms</h1>
@@ -73,7 +48,8 @@
       <br>
       <tr style="margin-top: 20px;">
         <td style="margin-top: 20px;">
-          <p style="color: black;">          <img  src="../../photo/Helal/filter.png" alt="" style="width: 16px;height: 16px;">
+          <p style="color: black;">         
+             <img  src="../../photo/Helal/filter.png" alt="" style="width: 16px;height: 16px; overflow: hidden;">
  Filter By : </p></td>
         <td>
           <select name="All Types" class="select_box" id="roomSelect" onchange="filterRooms()">
@@ -118,8 +94,9 @@
           <hr style="width: 300px; margin-right: 50px;">
         </p>
         <p style="margin-left: 15px;">Starting from </p>
-        <p style="font-weight: bold; color: #D4AF37; margin-left: 15px;">SAR 250 <BUtton class="b4">Veiw
-            Details</BUtton></p>
+        <p style="font-weight: bold; color: #D4AF37; margin-left: 15px;">SAR 250 <BUtton class="b4">
+          <a href="detials.html" style="text-decoration: none;"><span style="color: white;">Veiw Details</span></a>
+         </BUtton></p>
       </div>
 
       <div id="div2" data-price="400">
@@ -133,8 +110,9 @@
           <hr style="width: 300px; margin-right: 50px; ">
         </p>
         <p style="margin-left: 15px;">Starting from </p>
-        <p style="font-weight: bold; color: #D4AF37; margin-left: 15px;">SAR 400 <BUtton class="b4">Veiw
-            Details</BUtton></p>
+        <p style="font-weight: bold; color: #D4AF37; margin-left: 15px;">SAR 400 <BUtton class="b4">
+          <a href="detials.html" style="text-decoration: none;"><span style="color: white;">Veiw Details</span></a>
+            </BUtton></p>
       </div>
 
       <div id="div3" data-price="1200"><img class="size2" src="../../photo/Helal/r3.jpg" alt="">
@@ -147,8 +125,10 @@
           <hr style="width: 300px; margin-right: 50px;">
         </p>
         <p style="margin-left: 15px;">Starting from </p>
-        <p style="font-weight: bold; color: #D4AF37;margin-left: 15px;">SAR 1200 <BUtton class="b4">Veiw
-            Details</BUtton></p>
+        <p style="font-weight: bold; color: #D4AF37;margin-left: 15px;">SAR 1200 <BUtton class="b4">
+                    <a href="detials.html" style="text-decoration: none;"><span style="color: white;">Veiw Details</span></a>
+
+            </BUtton></p>
 
       </div>
     </div>
@@ -157,7 +137,9 @@
     <h1>Didn't Find What You're Looking For?</h1>
     <p>Contact us for help choosing the right room for you</p>
     <a href="Contact.html" style="text-decoration: none;">
-      <button class="contactt"><h4 style="color: #0A2A66;">Contact Us</h4></button>
+      <button class="contactt"><h4 style="color: #0A2A66;">
+                  <a href="../../html/khalid/Content.html" style="text-decoration: none;"><span style="color:#0A2A66;">Contact Us</span></a> 
+      </h4></button>
     </a>
   </div>
   <br><br>
@@ -191,22 +173,33 @@
               <h2>Quick Links</h2>
             </td>
           </tr>
-          <tr>
-            <td>Home</td>
-          </tr>
+ <tr>
+          <td>
+             <a href="home.html" style="text-decoration: none;"><span style="color: white;">Home</span></a>
+          </td>
+        </tr>
 
-          <tr>
-            <td>Branches</td>
-          </tr>
-          <tr>
-            <td>Roome</td>
-          </tr>
-          <tr>
-            <td>Services</td>
-          </tr>
-          <tr>
-            <td>About Us</td>
-          </tr>
+        <tr>
+          <td>             <a href="home.html" style="text-decoration: none;"><span style="color: white;">Branches</span></a>
+
+            </td>
+        </tr>
+        <tr>
+          <td>             <a href="Rooms.html" style="text-decoration: none;"><span style="color: white;">Roome</span></a>
+
+            </td>
+        </tr>
+        <tr>
+          <td>             <a href="Services.html" style="text-decoration: none;"><span style="color: white;">Services</span></a>
+
+            </td>
+        </tr>
+        <tr>
+          <td>
+                         <a href="../../html/ahmad/About Us.html" style="text-decoration: none;"><span style="color: white;">About Us</span></a>
+          </td>
+        </tr>
+
 
         </table>
       </div>
@@ -300,7 +293,7 @@
       }
     }
   </script>
-  <script>
+  <!-- <script>
     function sortByPrice() {
       const select = document.getElementById("priceSelect").value;
       const container = document.querySelector(".div5");
@@ -316,7 +309,7 @@
       });
       rooms.forEach(room => container.appendChild(room));
     }
-  </script>
+  </script> -->
 
 
 </body>
