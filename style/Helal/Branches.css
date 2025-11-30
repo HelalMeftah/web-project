@@ -1,4 +1,94 @@
 
+body {
+margin: 0;
+
+    font-family: 'Poppins';
+margin-top: 100px;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 60px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e1e4ea;
+  z-index: 1000;
+  font-size: 16px; 
+}
+
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo-background {
+    padding-bottom: 30px;
+    padding-left: 10px;
+    width: 40px;
+    height: 20px;
+    background-color: #0A2A66;
+    border-radius: 100%;
+}
+
+.logo-img {
+
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    width: 80px;
+}
+
+.logo-text {
+    font-weight: 900;
+    font-size: 20px;
+    color: #0A2A66;
+}
+
+
+.navbar-links {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-size: 17px;
+    color: #333A4D;
+    font-weight: 400;
+    transition: 0.2s;
+}
+
+.nav-link:hover {
+    color: #D4AF37;
+}
+
+.nav-link.active {
+    color: #D4AF37;
+    font-weight: 500;
+}
+
+
+.butten-book {
+  background-color: #0A2A66;
+  color: #ffffff;
+  border: none;
+  padding: 17px 28px;
+  border-radius: 12px;
+  font-size: 14px;
+  cursor: pointer;
+}
+.butten-book:hover {
+  opacity: 0.9;
+}
+
 .flex {
        display: flex;
        justify-content: space-around;
@@ -164,7 +254,7 @@ main{
     -o-border-radius: 16px;
 }
 .divready{
-    background-color: #cfd4dd;
+    background-color: #F5F5F5;
     width: 100%;
     height: 300px;
     text-align: center;
@@ -186,7 +276,7 @@ main{
 .nav7{
         background-color:#0A2A66;
             width: 100%;
-                height: 320px;
+                height: 390px;
 
 
 

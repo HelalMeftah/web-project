@@ -16,6 +16,8 @@ let adults=document.querySelector("#adults")
 let children=document.querySelector("#children")
 let guests_input=document.querySelector("#guests-input")
 let btn=document.querySelector("#book-btn")
+let contact_alert=document.querySelector("#contact-alert")
+let alert_content=document.querySelector("#alert-content")
 
 
 
@@ -43,6 +45,9 @@ Arrival_date.addEventListener("change",()=>{
 
 
 
+
+
+
 // for database
 let user ={
     name:"",
@@ -52,11 +57,15 @@ let user ={
     Room:"",
     ArrivalDates:"",
     Departure_date:"",
-    Adults:"",
-    children:"",
+    Adults:"1",
+    children:"0",
     price:0
    
 }
+
+ // to date not be empty
+user.ArrivalDates=time_zone
+user.Departure_date=time_zone
 
 
 //find price
@@ -92,7 +101,7 @@ function price(){
     }
 }
 
-
+//sand data to php
 function sanddata(){
        console.log(user)
  fetch("http://localhost/web-project/backend/khalid/book.php", {
@@ -101,17 +110,25 @@ function sanddata(){
     body: JSON.stringify(user)
 })
 .then(res => res.json()) 
-.then(txt => console.log(txt))
+.then(txt =>{
+     console.log(txt)
+     console.log(txt.message)
+     aleart(txt.message)
+}
+    
+    
+    )
 }
 
 
-
+// when btn click start sand to php
 btn.addEventListener("click",()=>{
     console.log("Send")
     sanddata()
 })
 
 
+//change side info like the input
 Name.addEventListener("input",(e)=>{
     if(e.target.value===""){
 name_input.textContent="Not specified"
@@ -125,7 +142,7 @@ name_input.textContent="Not specified"
     console.log(user)
 })
 
-
+//change side info like the input
 Email.addEventListener("input",(e)=>{
     if(e.target.value===""){
 email_input.textContent="Not specified"
@@ -140,7 +157,7 @@ email_input.textContent="Not specified"
 })
 
 
-
+//change side info like the input
 Phone.addEventListener("input",(e)=>{
     if(e.target.value===""){
 phone_input.textContent="Not specified"
@@ -154,6 +171,7 @@ phone_input.textContent="Not specified"
     
 })
 
+//change side info like the input
 City.addEventListener("input",(e)=>{
 if(e.target.value==="Choose a city"){
     City_input.textContent="Not specified"
@@ -164,6 +182,7 @@ if(e.target.value==="Choose a city"){
 }
 })
 
+//change side info like the input
 room_type.addEventListener("input",(e)=>{
     if(e.target.value==="Choose room type"){
    room_input.textContent="Not specified";
@@ -172,11 +191,12 @@ room_type.addEventListener("input",(e)=>{
         user.Room=e.target.value
 
     }
+    price()
  
 })
 
 
-
+//change side info like the input
 Arrival_date.addEventListener("input",(e)=>{
     if(user.Departure_date===""){
             Arrival_input.textContent=e.target.value ;
@@ -186,22 +206,26 @@ Arrival_date.addEventListener("input",(e)=>{
   Arrival_input.textContent=e.target.value +` to ${user.ArrivalDates}`;
     user.ArrivalDates=e.target.value
     }
+
+    price()
   
 
 })
 
-
+//change side info like the input
 Departure_date.addEventListener("input",(e)=>{
    
     Arrival_input.textContent=`${user.ArrivalDates} to `+ e.target.value 
     user.Departure_date=e.target.value
+
+    price()
 
 
 
     
 })
 
-
+//change side info like the input
 adults.addEventListener("input",(e)=>{
     if(user.Adults===""){
         guests_input.textContent="1 Adults"
@@ -216,10 +240,10 @@ adults.addEventListener("input",(e)=>{
     }
 
 
-    price()
+    
 })
 
-
+//change side info like the input
 children.addEventListener("input",(e)=>{
    
 
@@ -236,6 +260,24 @@ children.addEventListener("input",(e)=>{
     }
      
 })
+
+
+// show alert
+function aleart(m){
+    contact_alert.classList.remove("hidden")
+
+    if(m==="all input required"){
+    alert_content.textContent="all input required"
+
+    }else{
+            alert_content.textContent="We have received your booking request and will contact you later."
+
+    }
+
+    setTimeout(()=>{
+      contact_alert.classList.add("hidden")
+    },3000)
+}
 
 
 

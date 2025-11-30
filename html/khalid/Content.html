@@ -5,81 +5,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/style/ahmad/Offers.css">
+    
 
 </head>
 
 <body>
  
 
-    <header class="flex  justify-between sticky w-full top-0 bottom-0 bg-white z-40">
-        <div class="  h-20 flex md:w-[20%] ml-5  justify-center items-center  ">
-            <div class="bg-[#0A2A66] rounded-full w-fit h-fit p-1 rotate-180 flex justify-center items-center ml-2">
-                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24" fill="#D4AF37"
-                    stroke="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                    class="lucide lucide-moon-icon lucide-moon">
-                    <path
-                        d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401" />
-                </svg>
-            </div>
-            <div>
-                <h3 class="text-[#0A2A66] font-bold font-sans ">Hilal Hotels </h3>
-                <h3 class="text-[#D4AF37] font-bold">فنادق الهلال</h3>
 
-            </div>
-        </div>
+    <header class="navbar">
 
-        <nav class="ml-10 justify-center items-center hidden md:flex  w-[60%] ">
-            <div class="flex justify-around w-full">
-                <h2 class="hover:text-[#D4AF37] hover:cursor-pointer text-2xl font-sans font-bold"><a
-                        href="../Helal/home.html">Home</a></h2>
-                <h2 class="hover:text-[#D4AF37] hover:cursor-pointer text-2xl font-sans font-bold"><a
-                        href="../Helal/Branches.html">Branch</a></h2>
-                <h2 class="hover:text-[#D4AF37] hover:cursor-pointer text-2xl font-sans font-bold"><a
-                        href="Rooms.html">Rooms</a></h2>
-                <h2 class=" hover:text-[#D4AF37]  hover:cursor-pointer text-2xl font-sans font-bold"><a
-                        href="../Helal/Services.html">service</a></h2>
-                <h2 class="hover:text-[#D4AF37] hover:cursor-pointer text-2xl font-sans font-bold"><a
-                        href="../ahmad/Offers.html">Offers</a></h2>
-                <h2 class="hover:text-[#D4AF37] hover:cursor-pointer text-2xl font-sans font-bold"><a
-                        href="../ahmad/About Us.html">About us</a></h2>
-                <h2 class=" text-[#D4AF37] hover:cursor-pointer text-2xl font-sans font-bold"><a
-                        href="Content.html">Content</a></h2>
+    <div class="navbar-left">
+      <div class="logo-background">
+        <img class="logo-img" src="../../photo/Helal/moon_gold.png" alt="Hilal Hotels">
+      </div>
+      <span class="logo-text">Hilal Hotels</span>
+    </div>
 
+      <nav class="navbar-links">
+      <a href="../Helal/home.html" class="nav-link">Home</a>
+      <a href="../Helal/Branches.html" class="nav-link">Branches</a>
+      <a href="../Helal/Rooms.html" class="nav-link">Rooms</a>
+      <a href="../Helal/Services.html" class="nav-link">Services</a>
+      <a href="../ahmad/Offers.html" class="nav-link"><span>Offers</span></a>
+      <a href="../ahmad/About Us.html" class="nav-link ">About Us</a>
+      <a href="../khalid/Content.html" class="nav-link" style="color: #d4af37;">Contact</a>
+    </nav>
 
+    <button class="butten-book"><a href="../khalid/Book.html"  style="text-decoration: none; color: white;">Book Now</a></button>
 
-            </div>
+  </header>
 
 
 
 
-        </nav>
-        <div class="w-[10%] flex justify-center items-center hidden md:flex ">
-            <button class="bg-[#0A2A66] text-white p-4 rounded-xl hover:cursor-pointer"><a href="Book.html">Book Now</a></button>
-
-        </div>
-
-        <!-- responsive-->
-        <div class="md:hidden w-[10%] flex justify-center items-center" id="hum-icon">
-            <svg class="remove-one" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                class="lucide lucide-menu-icon lucide-menu">
-                <path d="M4 5h16" />
-                <path d="M4 12h16" />
-                <path d="M4 19h16" />
-            </svg>
-            <svg class="remove-two hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                class="lucide lucide-x-icon lucide-x">
-                <path d="M18 6 6 18" />
-                <path d="m6 6 12 12" />
-            </svg>
-        </div>
-
-
-        <!-- responsive-->
-
-    </header>
+    
 
 
     <!--content item-->
@@ -509,10 +481,11 @@
             <div class=" col-span-1 p-3 space-y-2">
                 <h1 class="text-[#D4AF37] font-semibold text-xl mb-3">Quick Links</h1>
 
-                <h4 class="text-[#D1D5DB]">Home</h4>
-                <h4 class="text-[#D1D5DB]">Branches</h4>
-                <h4 class="text-[#D1D5DB]">Rooms</h4>
-                <h4 class="text-[#D1D5DB]">About Us</h4>
+              
+                <h4 class="text-[#D1D5DB]"><a href="../Helal/home.html">Home</a></h4>
+                <h4 class="text-[#D1D5DB]"><a href="../Helal/Branches.html">Branches</a></h4>
+                <h4 class="text-[#D1D5DB]"><a href="../Helal/Rooms.html">Rooms</a></h4>
+                <h4 class="text-[#D1D5DB]"><a href="../ahmad/About Us.html">About Us</a></h4>
             </div>
 
 
@@ -596,6 +569,15 @@
     
 
 
+<script>
+  tailwind.config = {
+    theme: {
+      fontFamily: {
+        poppins: ["Poppins", "sans-serif"],
+      }
+    }
+  }
+</script>
 
 
 <script src="../../js/khalid/content.js"></script>

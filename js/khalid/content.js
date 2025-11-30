@@ -1,3 +1,4 @@
+//select element
 let contact_name=document.querySelector("#contact-name")
 let contact_email=document.querySelector("#contact-email")
 let contact_number=document.querySelector("#contact-number")
@@ -8,7 +9,7 @@ let contact_alert=document.querySelector("#contact-alert")
 let reg=/[+][0-9]\d+$/
 
 
-
+//object to sand data
 let Contact={
     name:"",
     email:"",
@@ -17,6 +18,8 @@ let Contact={
     
 }
 
+
+//sand to php
 function sand() {
     //backend/khalid/content.php
     console.log(Contact)
@@ -30,7 +33,7 @@ function sand() {
 
 }
 
-
+//make sure to the data is right and change btn color based on that
 function change(){
  if(Contact.name!==""&&Contact.email!==""&&Contact.message!==""){
     if(reg.test(Contact.number)){
@@ -53,25 +56,26 @@ function change(){
 
 
 
-
+// make the data to object when value change 
 contact_name.addEventListener("input",(e)=>{
     Contact.name=e.target.value
     change()
 })
 
+// make the data to object when value change 
 contact_email.addEventListener("input",(e)=>{
     Contact.email=e.target.value
     change()
 })
 
-
+// make the data to object when value change 
 contact_number.addEventListener("input",(e)=>{
     Contact.number=e.target.value
     change()
      console.log(reg.test(Contact.number))
 })
 
-
+// make the data to object when value change 
 contact_message.addEventListener("input",(e)=>{
     Contact.message=e.target.value
     change()
@@ -79,7 +83,7 @@ contact_message.addEventListener("input",(e)=>{
 })
 
 
-
+// show alert
 contact_btn.addEventListener("click",()=>{
     
     if(Contact.name!==""&&Contact.message!==""&&Contact.email!==""&&reg.test(Contact.number)){
@@ -92,7 +96,20 @@ contact_alert.classList.add("hidden")
     },3000)
 
 
-    sand()
+    async function order_process(){
+        //here make sure is order
+        await sand()
+        contact_email.value=""
+        contact_name.value=""
+        contact_message.value=""
+        contact_number.value=""
+
+
+    }
+order_process()
+
+
+
     }
    
 })

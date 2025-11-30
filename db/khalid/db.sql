@@ -1,4 +1,7 @@
--- by khalid
+-- by khalid ;
+
+
+
 create database Hotels;
 
 use Hotels;
@@ -22,6 +25,7 @@ delete from content;
 
 
 create table booking(
+user_id int auto_increment PRIMARY KEY,
 user_name varchar(250),
 user_email varchar(250),
 user_phone varchar(259),
@@ -34,6 +38,9 @@ user_children int,
 price int
 
 );
+
+
+select user_name  ,user_email , user_ArrivalDates , user_Departure_date  ,user_Room room from booking order by user_id desc;
 
 
 
@@ -85,10 +92,5 @@ select price as Standard_profit  from booking where user_Room ="Standard Room - 
 -- Deluxe Room 
 select count(user_Room) as Deluxe_Room   from booking where user_Room ="Deluxe Room - 400 SAR / night";
 select price as Deluxe_profit  from booking where user_Room ="Deluxe Room - 400 SAR / night";
-
-
-
-
-
 
 
