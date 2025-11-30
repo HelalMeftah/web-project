@@ -274,27 +274,26 @@ font-weight: 300;
 }
 
 
+
 .footer {
   background: #0A2A66;
   color: white;
   padding: 60px 100px;
-  margin-top: 50px;
+  margin-top: 50px;        
 }
 
 .footer-grid {
   display: grid;
-  grid-template-columns: 1.5fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 40px;
 }
 
 .footer-title {
   font-weight: 900;
   margin-bottom: 10px;
+  color: #D4AF37;
 }
 
-.footer-text {
-  line-height: 1.7;
-}
 
 .footer-list {
   list-style: none;
