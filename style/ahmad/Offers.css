@@ -1,97 +1,94 @@
 body {
-margin: 0;
+  margin: 0;
 
-    font-family: 'Poppins';
-margin-top: 100px;
+  font-family: 'Poppins';
+  margin-top: 100px;
 }
 
 .navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    font-family: 'Poppins';
-    font-size: 1000px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    color: var(0.37 0.03 259. 1);
-    padding: 14px 60px;
-    background-color: #ffffff;
-    border-bottom: 1px solid #e1e4ea;
-    z-index: 1000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 60px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e1e4ea;
+  z-index: 1000;
+  font-size: 16px;
 }
 
 
 .navbar-left {
-    display: flex;
-    align-items: center;
-    gap: 12px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }
 
 .logo-background {
-    padding-bottom: 30px;
-    padding-left: 10px;
-    width: 40px;
-    height: 20px;
-    background-color: #0A2A66;
-    border-radius: 100%;
+  padding-bottom: 30px;
+  padding-left: 10px;
+  width: 40px;
+  height: 20px;
+  background-color: #0A2A66;
+  border-radius: 100%;
 }
 
 .logo-img {
 
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    width: 80px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  width: 80px;
 }
 
 .logo-text {
-    font-weight: 900;
-    font-size: 20px;
-    color: #0A2A66;
+  font-weight: 900;
+  font-size: 20px;
+  color: #0A2A66;
 }
 
 
 .navbar-links {
-    display: flex;
-    align-items: center;
-    gap: 32px;
+  display: flex;
+  align-items: center;
+  gap: 32px;
 }
 
 .nav-link {
-    text-decoration: none;
-    font-size: 17px;
-    color: #333A4D;
-    font-weight: 400;
-    transition: 0.2s;
+  text-decoration: none;
+  font-size: 17px;
+  color: #333A4D;
+  font-weight: 400;
+  transition: 0.2s;
 }
 
 .nav-link:hover {
-    color: #D4AF37;
+  color: #0A2A66;
 }
 
 .nav-link.active {
-    color: #D4AF37;
-    font-weight: 500;
+  color: #D4AF37;
+  font-weight: 500;
 }
 
 
 .butten-book {
-    background-color: #0A2A66;
-    color: #ffffff;
-    border: none;
-    padding: 17px 28px;
-    border-radius: 12px;
-    font-size: 14px;
-    font-weight: 7  00;
-    cursor: pointer;
-    transition: 0.2s;
+  background-color: #0A2A66;
+  color: #ffffff;
+  border: none;
+  padding: 17px 28px;
+  border-radius: 12px;
+  font-size: 14px;
+  cursor: pointer;
 }
 
-.bbutten-book:hover {
-    opacity: 0.9;
+.butten-book:hover {
+  opacity: 0.9;
 }
+
 /* النهاية من الناف هنا  */
 
 
