@@ -101,7 +101,7 @@ function price(){
     }
 }
 
-
+//sand data to php
 function sanddata(){
        console.log(user)
  fetch("http://localhost/web-project/backend/khalid/book.php", {
@@ -121,13 +121,14 @@ function sanddata(){
 }
 
 
-
+// when btn click start sand to php
 btn.addEventListener("click",()=>{
     console.log("Send")
     sanddata()
 })
 
 
+//change side info like the input
 Name.addEventListener("input",(e)=>{
     if(e.target.value===""){
 name_input.textContent="Not specified"
@@ -141,7 +142,7 @@ name_input.textContent="Not specified"
     console.log(user)
 })
 
-
+//change side info like the input
 Email.addEventListener("input",(e)=>{
     if(e.target.value===""){
 email_input.textContent="Not specified"
@@ -156,7 +157,7 @@ email_input.textContent="Not specified"
 })
 
 
-
+//change side info like the input
 Phone.addEventListener("input",(e)=>{
     if(e.target.value===""){
 phone_input.textContent="Not specified"
@@ -170,6 +171,7 @@ phone_input.textContent="Not specified"
     
 })
 
+//change side info like the input
 City.addEventListener("input",(e)=>{
 if(e.target.value==="Choose a city"){
     City_input.textContent="Not specified"
@@ -180,6 +182,7 @@ if(e.target.value==="Choose a city"){
 }
 })
 
+//change side info like the input
 room_type.addEventListener("input",(e)=>{
     if(e.target.value==="Choose room type"){
    room_input.textContent="Not specified";
@@ -193,7 +196,7 @@ room_type.addEventListener("input",(e)=>{
 })
 
 
-
+//change side info like the input
 Arrival_date.addEventListener("input",(e)=>{
     if(user.Departure_date===""){
             Arrival_input.textContent=e.target.value ;
@@ -209,7 +212,7 @@ Arrival_date.addEventListener("input",(e)=>{
 
 })
 
-
+//change side info like the input
 Departure_date.addEventListener("input",(e)=>{
    
     Arrival_input.textContent=`${user.ArrivalDates} to `+ e.target.value 
@@ -222,7 +225,7 @@ Departure_date.addEventListener("input",(e)=>{
     
 })
 
-
+//change side info like the input
 adults.addEventListener("input",(e)=>{
     if(user.Adults===""){
         guests_input.textContent="1 Adults"
@@ -240,7 +243,7 @@ adults.addEventListener("input",(e)=>{
     
 })
 
-
+//change side info like the input
 children.addEventListener("input",(e)=>{
    
 
